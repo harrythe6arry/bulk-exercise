@@ -1,0 +1,10 @@
+<%# <h1>After user auth</h1> %>
+<h1>Info Page</h1>
+<p>
+   <%= @message %>
+</p>
+
+<%= form_with url: upload_csv_pages_path, local: true, multipart: true do |f| %>
+  <%= f.file_field :csv_file, required: true %>
+  <%= f.submit "Upload CSV" %>
+<% end %>

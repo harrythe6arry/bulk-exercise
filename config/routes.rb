@@ -11,12 +11,14 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  root "pages#index"
+  # root "pages#index"
   get "info" => "pages#info", as: :info
   resources :pages do
   collection do
     post :upload_csv
+    get :show
   end
 end
+ resources :csv_uploads, only: [:new, :create, :show]
 end
 

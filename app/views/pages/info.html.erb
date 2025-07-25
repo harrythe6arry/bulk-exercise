@@ -1,5 +1,5 @@
 <%# <h1>After user auth</h1> %>
-<h1>Info Page</h1>
+<h1>Welcome, CSV PAGE</h1>
 <p>
    <%= @message %>
 </p>
@@ -8,3 +8,9 @@
   <%= f.file_field :csv_file, required: true %>
   <%= f.submit "Upload CSV" %>
 <% end %>
+
+
+<%# going back to te index page %>
+<p>
+  <%= link_to "Back to Index", root_path %>
+</p>

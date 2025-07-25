@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bulk_charge: one
+  row_number: 1
+  status: MyString
+  omise_charge_id: MyString
+  token_response: 
+  charge_response: 
+
+two:
+  bulk_charge: two
+  row_number: 1
+  status: MyString
+  omise_charge_id: MyString
+  token_response: 
+  charge_response: 

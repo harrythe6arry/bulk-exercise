@@ -69,5 +69,6 @@ gem "faraday", "~> 2.13"
 gem "fabrication", "~> 3.0"
 
 gem "image_processing", "~> 1.14"
+gem 'csv', '~> 3.0'
 
 gem "bcrypt", "~> 3.1.7"

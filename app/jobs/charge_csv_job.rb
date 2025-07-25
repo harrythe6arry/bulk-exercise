@@ -20,6 +20,15 @@ class ChargeCsvJob
   private
 
   def process_row(bulk_charge, row_data, row_number)
-    p" Processing row #{row_number}: #{row_data.inspect}"
-  end
+  p "Processing row #{row_number}: #{row_data.inspect}"
+  p "the parameters of the row are #{row_data.to_h}"
+
+  skey = row_data['skey']
+  pkey1 = row_data['pkey'] 
+  card_name = row_data['card_name']
+  charge_amount = row_data['charge_amount']
+  charge_currency = row_data['charge_currency']
+
+  p "The extraction are skey: #{skey}, pkey: #{pkey1}, card_name: #{card_name}, charge_amount: #{charge_amount}, charge_currency: #{charge_currency}"
+end
 end

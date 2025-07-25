@@ -8,27 +8,22 @@ class BulkchargesController < ApplicationController
   end
 
   def create
-    @bulk_charge = BulkCharge.new(bulk_charge_params)
-    @bulk_charge.status = :pending
-    # @bulk_charge.save
+  @bulk_charge = BulkCharge.new(bulk_charge_params)
+  @bulk_charge.status = :pending
 
-    unless @bulk_charge.csv_file.attached?
-      @bulk_charge.errors.add(:csv_file, "must be present")
-      return render :new, status: :unprocessable_entity
-    end
-
+  if @bulk_charge.save
     row_count = @bulk_charge.csv_file.blob.open { |file| file.each_line.count }
+    p "the row count is #{row_count}"
     if row_count > 500
       @bulk_charge.errors.add(:csv_file, "cannot have more than 500 rows")
+      @bulk_charge.destroy
       return render :new, status: :unprocessable_entity
     end
-
-    if @bulk_charge.save
-      redirect_to bulk_charge_path(@bulk_charge), notice: 'Bulk charge was successfully created.'
-    else
-      render :new, status: :unprocessable_entity
-    end
+    redirect_to bulkcharge_path(@bulk_charge), notice: 'Bulk charge was successfully created.'
+  else
+    render :new, status: :unprocessable_entity
   end
+end
 
   def show
     @bulk_charge = BulkCharge.find(params[:id])

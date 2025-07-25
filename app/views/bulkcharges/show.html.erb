@@ -1,0 +1,26 @@
+<h1>Bulk Charges</h1>
+
+<%= link_to "New Bulk Charge", new_bulk_charge_path, class: "button" %>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Status</th>
+      <th>Created At</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @bulk_charges.each do |bulk_charge| %>
+      <tr>
+        <td><%= bulk_charge.id %></td>
+        <td><%= bulk_charge.status %></td>
+        <td><%= bulk_charge.created_at.strftime("%Y-%m-%d %H:%M:%S") %></td>
+        <td>
+          <%= link_to "View", bulk_charge_path(bulk_charge) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

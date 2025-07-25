@@ -72,3 +72,5 @@ gem "image_processing", "~> 1.14"
 gem 'csv', '~> 3.0'
 
 gem "bcrypt", "~> 3.1.7"
+
+gem 'active_storage_validations'

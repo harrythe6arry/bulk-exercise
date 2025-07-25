@@ -11,12 +11,17 @@
     </tr>
   </thead>
   <tbody>
-    <% @bulk_charges.each do |bulk_charge| %>
-      <tr>
-        <td><%= bulk_charge.id %></td>
-        <td><%= bulk_charge.status %></td>
-        <td><%= bulk_charge.created_at.strftime("%Y-%m-%d %H:%M:%S") %></td>
-      </tr>
-    <% end %>
+   <tbody>
+  <% @bulk_charges.each do |bulk_charge| %>
+    <tr>
+      <td><%= bulk_charge.id %></td>
+      <td><%= bulk_charge.status %></td>
+      <td><%= bulk_charge.created_at.strftime("%Y-%m-%d %H:%M:%S") %></td>
+      <td>
+        <%= link_to "Preview CSV", csv_preview_bulkcharge_path(bulk_charge) %>
+      </td>
+    </tr>
+  <% end %>
+</tbody>
   </tbody>
 </table>

@@ -3,10 +3,12 @@ class ChargeCsvJob
   require 'csv'
 
   def perform(bulk_charge_id)
+    p "Starting ChargeCsvJob for BulkCharge ID: #{bulk_charge_id}"
     bulk_charge = BulkCharge.find(bulk_charge_id)
     return unless bulk_charge
     bulk_charge.update!(status: :in_progress)
     csv_text = bulk_charge.csv_file.download
+    p "CSV file downloaded for BulkCharge ID: #{bulk_charge_id}, content length: #{csv_text.length} characters"
     CSV.parse(csv_text, headers: true).each.with_index(1) do |row, index|
       process_row(bulk_charge, row, index)
     end

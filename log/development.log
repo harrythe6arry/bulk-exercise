@@ -9367,3 +9367,604 @@ Processing by BulkchargesController#new as HTML
 Completed 200 OK in 54ms (Views: 3.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
 
 
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:13:09 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (11.4ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 21.5ms | GC: 0.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | GC: 1.0ms)
+Completed 200 OK in 78ms (Views: 24.2ms | ActiveRecord: 11.4ms (1 query, 0 cached) | GC: 2.3ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:13:10 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.4ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 5.2ms | GC: 1.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | GC: 1.3ms)
+Completed 200 OK in 55ms (Views: 6.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 16:13:10 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 16:13:10 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 16:13:10 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 16:13:10 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 16:13:10 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 16:13:10 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 16:13:10 +0700
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 16:13:11 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 3.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | GC: 0.0ms)
+Completed 200 OK in 55ms (Views: 3.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:13:14 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x00000001289bd948 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-examw2.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (3.7ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 09:13:15.065832', '2025-07-25 09:13:15.065832') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 10 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('2po7k40dtbfsm5oxc35wmsax29pw', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 228, 'dDBfLGWMgRqiqhx6yZJH2w==', '2025-07-25 09:13:15.078970') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 10, 10, '2025-07-25 09:13:15.080440') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 09:13:15.081511' WHERE "bulk_charges"."id" = 10 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.8ms) [0m[32mUploaded file to key: 2po7k40dtbfsm5oxc35wmsax29pw (checksum: dDBfLGWMgRqiqhx6yZJH2w==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (1.1ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 10 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 10 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 10 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 09:13:15.091307' WHERE "bulk_charges"."id" = 10 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: 2po7k40dtbfsm5oxc35wmsax29pw[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/10
+Completed 302 Found in 174ms (ActiveRecord: 7.1ms (9 queries, 0 cached) | GC: 23.9ms)
+
+
+Started GET "/bulkcharges/10" for 127.0.0.1 at 2025-07-25 16:13:15 +0700
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"10"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 10 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:30:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 2.3ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:13:31 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.8ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 15.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | GC: 0.0ms)
+Completed 200 OK in 66ms (Views: 18.0ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/10/csv_preview" for 127.0.0.1 at 2025-07-25 16:13:33 +0700
+Processing by BulkchargesController#csv_preview as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 10 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:34:in `csv_preview'
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 10 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:36:in `csv_preview'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 10 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:37:in `csv_preview'
+[36m  Disk Storage (0.4ms) [0m[34mDownloaded file from key: 2po7k40dtbfsm5oxc35wmsax29pw[0m
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/csv_preview.html.erb within layouts/application
+  Rendered bulkcharges/csv_preview.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 62ms (Views: 2.6ms | ActiveRecord: 1.1ms (3 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:13:34 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 58ms (Views: 8.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/2/csv_preview" for 127.0.0.1 at 2025-07-25 16:13:35 +0700
+Processing by BulkchargesController#csv_preview as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 2 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:34:in `csv_preview'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:36:in `csv_preview'
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 2 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:37:in `csv_preview'
+[36m  Disk Storage (0.5ms) [0m[34mDownloaded file from key: 2bsfwc9rcjsbebqg0q7ihk1snamm[0m
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/csv_preview.html.erb within layouts/application
+  Rendered bulkcharges/csv_preview.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 57ms (Views: 2.4ms | ActiveRecord: 0.2ms (3 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/bulkcharges/10/csv_preview" for 127.0.0.1 at 2025-07-25 16:13:38 +0700
+Processing by BulkchargesController#csv_preview as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 10 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:34:in `csv_preview'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 10 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:36:in `csv_preview'
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 10 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:37:in `csv_preview'
+[36m  Disk Storage (1.0ms) [0m[34mDownloaded file from key: 2po7k40dtbfsm5oxc35wmsax29pw[0m
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/csv_preview.html.erb within layouts/application
+  Rendered bulkcharges/csv_preview.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 58ms (Views: 1.1ms | ActiveRecord: 0.2ms (3 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:13:40 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | GC: 2.1ms)
+Completed 200 OK in 54ms (Views: 4.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 2.1ms)
+
+
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 16:13:44 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.0ms)
+Completed 200 OK in 53ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:13:53 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.3ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 7.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | GC: 0.0ms)
+Completed 200 OK in 70ms (Views: 23.0ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:13:58 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x000000012a53af18 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-yakg5c.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (2.0ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 09:13:58.508623', '2025-07-25 09:13:58.508623') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 11 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('ha6kaj6s4liiagcxjuv2fadh24bz', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 228, 'dDBfLGWMgRqiqhx6yZJH2w==', '2025-07-25 09:13:58.519257') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 11, 11, '2025-07-25 09:13:58.520278') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 09:13:58.521586' WHERE "bulk_charges"."id" = 11 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.7ms) [0m[32mUploaded file to key: ha6kaj6s4liiagcxjuv2fadh24bz (checksum: dDBfLGWMgRqiqhx6yZJH2w==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (0.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 11 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 11 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 11 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 09:13:58.530665' WHERE "bulk_charges"."id" = 11 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: ha6kaj6s4liiagcxjuv2fadh24bz[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/11
+Completed 302 Found in 78ms (ActiveRecord: 3.5ms (9 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/11" for 127.0.0.1 at 2025-07-25 16:13:58 +0700
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"11"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 11 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:30:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 27ms (Views: 1.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/11" for 127.0.0.1 at 2025-07-25 16:17:53 +0700
+Processing by BulkchargesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 11 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:33:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | GC: 0.1ms)
+Completed 200 OK in 59ms (Views: 12.0ms | ActiveRecord: 2.7ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/bulkcharges/" for 127.0.0.1 at 2025-07-25 16:17:55 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 3.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | GC: 0.0ms)
+Completed 200 OK in 35ms (Views: 5.7ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/10/csv_preview" for 127.0.0.1 at 2025-07-25 16:17:56 +0700
+Processing by BulkchargesController#csv_preview as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 10 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:37:in `csv_preview'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 10 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:39:in `csv_preview'
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 10 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:40:in `csv_preview'
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: 2po7k40dtbfsm5oxc35wmsax29pw[0m
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/csv_preview.html.erb within layouts/application
+  Rendered bulkcharges/csv_preview.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 101ms (Views: 3.3ms | ActiveRecord: 0.9ms (3 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 16:17:56 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | GC: 0.0ms)
+Completed 200 OK in 52ms (Views: 4.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:18:00 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x00000001295d5320 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-ew5qdp.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (2.0ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 09:18:00.149180', '2025-07-25 09:18:00.149180') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 12 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('qcn638t1trnha17ab98r5um8nnwy', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 228, 'dDBfLGWMgRqiqhx6yZJH2w==', '2025-07-25 09:18:00.158525') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 12, 12, '2025-07-25 09:18:00.159752') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 09:18:00.160830' WHERE "bulk_charges"."id" = 12 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (1.2ms) [0m[32mUploaded file to key: qcn638t1trnha17ab98r5um8nnwy (checksum: dDBfLGWMgRqiqhx6yZJH2w==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (0.6ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 12 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 12 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 12 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.1ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 09:18:00.170893' WHERE "bulk_charges"."id" = 12 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (1.4ms) [0m[34mDownloaded file from key: qcn638t1trnha17ab98r5um8nnwy[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/12
+Completed 302 Found in 79ms (ActiveRecord: 3.2ms (9 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/12" for 127.0.0.1 at 2025-07-25 16:18:00 +0700
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"12"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 12 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:33:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | GC: 18.8ms)
+Completed 200 OK in 45ms (Views: 23.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 18.8ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:18:07 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (3.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 9.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | GC: 0.0ms)
+Completed 200 OK in 39ms (Views: 8.9ms | ActiveRecord: 3.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:18:45 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.4ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 8.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | GC: 0.2ms)
+Completed 200 OK in 54ms (Views: 15.8ms | ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:18:45 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.3ms)
+Completed 200 OK in 58ms (Views: 4.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 16:18:45 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 16:18:45 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 16:18:45 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 16:18:46 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 16:18:46 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 16:18:46 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 16:18:46 +0700
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 16:18:46 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 58ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:18:49 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x000000012a593028 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-izb35v.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (0.3ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 09:18:49.977641', '2025-07-25 09:18:49.977641') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('p6lurtxtxuoiqmh3sjozwerb81ag', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 228, 'dDBfLGWMgRqiqhx6yZJH2w==', '2025-07-25 09:18:49.988121') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 13, 13, '2025-07-25 09:18:49.989236') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 09:18:49.989927' WHERE "bulk_charges"."id" = 13 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.7ms) [0m[32mUploaded file to key: p6lurtxtxuoiqmh3sjozwerb81ag (checksum: dDBfLGWMgRqiqhx6yZJH2w==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (0.8ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 13 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 13 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 13 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 09:18:49.999806' WHERE "bulk_charges"."id" = 13 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: p6lurtxtxuoiqmh3sjozwerb81ag[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/13
+Completed 302 Found in 122ms (ActiveRecord: 2.8ms (9 queries, 0 cached) | GC: 13.4ms)
+
+
+Started GET "/bulkcharges/13" for 127.0.0.1 at 2025-07-25 16:18:50 +0700
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"13"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 13 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:33:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 1.6ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 12 LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:7:in `perform'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 12 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mBulkCharge Update (0.1ms)[0m  [1m[33mUPDATE "bulk_charges" SET "status" = 1, "updated_at" = '2025-07-25 09:19:57.640132' WHERE "bulk_charges"."id" = 12 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mBulkCharge Load (2.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 11 LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:7:in `perform'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 11 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mBulkCharge Update (0.2ms)[0m  [1m[33mUPDATE "bulk_charges" SET "status" = 1, "updated_at" = '2025-07-25 09:19:57.661042' WHERE "bulk_charges"."id" = 11 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 11 LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:10:in `perform'
+  [1m[36mBulkCharge Load (0.3ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 13 LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:7:in `perform'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mActiveStorage::Attachment Load (2.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "status" = 1, "updated_at" = '2025-07-25 09:19:57.692428' WHERE "bulk_charges"."id" = 13 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 13 LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:10:in `perform'
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 10 LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:7:in `perform'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 10 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mBulkCharge Update (0.1ms)[0m  [1m[33mUPDATE "bulk_charges" SET "status" = 1, "updated_at" = '2025-07-25 09:19:57.703636' WHERE "bulk_charges"."id" = 10 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 10 LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:10:in `perform'
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 12 LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:10:in `perform'
+[36m  Disk Storage (2.1ms) [0m[34mDownloaded file from key: p6lurtxtxuoiqmh3sjozwerb81ag[0m
+[36m  Disk Storage (0.9ms) [0m[34mDownloaded file from key: 2po7k40dtbfsm5oxc35wmsax29pw[0m
+[36m  Disk Storage (0.4ms) [0m[34mDownloaded file from key: qcn638t1trnha17ab98r5um8nnwy[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mBulkCharge Update (0.7ms)[0m  [1m[33mUPDATE "bulk_charges" SET "status" = 2, "updated_at" = '2025-07-25 09:19:57.709163' WHERE "bulk_charges"."id" = 13 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mBulkCharge Update (0.4ms)[0m  [1m[33mUPDATE "bulk_charges" SET "status" = 2, "updated_at" = '2025-07-25 09:19:57.713247' WHERE "bulk_charges"."id" = 12 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+[36m  Disk Storage (6.5ms) [0m[34mDownloaded file from key: ha6kaj6s4liiagcxjuv2fadh24bz[0m
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mBulkCharge Update (4.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "status" = 2, "updated_at" = '2025-07-25 09:19:57.710933' WHERE "bulk_charges"."id" = 10 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mBulkCharge Update (2.4ms)[0m  [1m[33mUPDATE "bulk_charges" SET "status" = 2, "updated_at" = '2025-07-25 09:19:57.715914' WHERE "bulk_charges"."id" = 11 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:20:15 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (1.6ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 5.6ms | GC: 1.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | GC: 1.1ms)
+Completed 200 OK in 54ms (Views: 10.0ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 16:20:15 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 1.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 54ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:20:19 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 51ms (Views: 2.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 16:20:20 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x000000012b5d9dd8 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-8hqw8q.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (2.3ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 09:20:20.465022', '2025-07-25 09:20:20.465022') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 14 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('k3enmc9cf7dckth7533y2fnkzlvw', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 228, 'dDBfLGWMgRqiqhx6yZJH2w==', '2025-07-25 09:20:20.475992') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 14, 14, '2025-07-25 09:20:20.477200') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 09:20:20.478585' WHERE "bulk_charges"."id" = 14 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.6ms) [0m[32mUploaded file to key: k3enmc9cf7dckth7533y2fnkzlvw (checksum: dDBfLGWMgRqiqhx6yZJH2w==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (1.1ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 14 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 14 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 14 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 09:20:20.487407' WHERE "bulk_charges"."id" = 14 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (2.6ms) [0m[34mDownloaded file from key: k3enmc9cf7dckth7533y2fnkzlvw[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/14
+Completed 302 Found in 105ms (ActiveRecord: 4.0ms (9 queries, 0 cached) | GC: 17.0ms)
+
+
+  [1m[36mBulkCharge Load (0.7ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 14 LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:7:in `perform'
+Started GET "/bulkcharges/14" for 127.0.0.1 at 2025-07-25 16:20:20 +0700
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 14 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"14"}
+  [1m[36mBulkCharge Update (0.2ms)[0m  [1m[33mUPDATE "bulk_charges" SET "status" = 1, "updated_at" = '2025-07-25 09:20:20.540948' WHERE "bulk_charges"."id" = 14 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:9:in `perform'
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 14 LIMIT 1 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:10:in `perform'
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: k3enmc9cf7dckth7533y2fnkzlvw[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mBulkCharge Update (0.4ms)[0m  [1m[33mUPDATE "bulk_charges" SET "status" = 2, "updated_at" = '2025-07-25 09:20:20.556377' WHERE "bulk_charges"."id" = 14 /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  ↳ app/jobs/charge_csv_job.rb:15:in `perform'
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 14 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:33:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | GC: 1.8ms)
+Completed 200 OK in 34ms (Views: 4.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 4.5ms)
+
+

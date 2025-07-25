@@ -23,12 +23,22 @@ class BulkchargesController < ApplicationController
   else
     render :new, status: :unprocessable_entity
   end
-end
+  end
 
   def show
     @bulk_charge = BulkCharge.find(params[:id])
     @charge_results = @bulk_charge.charge_results.order(:row_number)
   end
+  def csv_preview
+    @bulk_charge = BulkCharge.find(params[:id])
+    @csv_rows = []
+    if @bulk_charge.csv_file.attached?
+      @bulk_charge.csv_file.blob.open do |file|
+        @csv_rows = CSV.parse(file.read, headers: true)
+      end
+    end
+  end
+  
 
   private
   

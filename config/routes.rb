@@ -21,6 +21,10 @@ Rails.application.routes.draw do
   end
   resources :csv_uploads, only: [:new, :create, :show]
   # resources :bulk_charges, only: [:new, :create, :show]
-  resources :bulkcharges
+  resources :bulkcharges do
+  member do
+    get :csv_preview
+  end
+end
 end
 

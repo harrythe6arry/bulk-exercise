@@ -1,0 +1,22 @@
+<h1>Bulk Charges total CSV files </h1>
+<p>
+  <%= link_to "New Bulk Charge", new_bulkcharge_path, class: "button" %>
+</p>
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Status</th>
+      <th>Created At</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @bulk_charges.each do |bulk_charge| %>
+      <tr>
+        <td><%= bulk_charge.id %></td>
+        <td><%= bulk_charge.status %></td>
+        <td><%= bulk_charge.created_at.strftime("%Y-%m-%d %H:%M:%S") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

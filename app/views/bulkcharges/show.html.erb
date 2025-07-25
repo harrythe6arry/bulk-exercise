@@ -1,0 +1,15 @@
+<h1>Bulk Charge Details</h1>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <td><%= @bulk_charge.id %></td>
+  </tr>
+  <tr>
+    <th>Status</th>
+    <td><%= @bulk_charge.status %></td>
+  </tr>
+  <tr>
+    <th>Created At</th>
+    <td><%= @bulk_charge.created_at.strftime("%Y-%m-%d %H:%M:%S") %></td>
+  </tr>
+</table>

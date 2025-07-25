@@ -5887,3 +5887,2762 @@ Migrating to CreateUsers (20250724044235)
   [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
   [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2025-07-25 12:51:27 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 4 pending migrations:
+
+db/migrate/20250724044235_create_users.rb
+db/migrate/20250724100319_create_csv_uploads.rb
+db/migrate/20250725052815_create_bulk_charges.rb
+db/migrate/20250725052924_create_charge_results.rb
+
+
+):
+  
+activerecord (8.0.2) lib/active_record/migration.rb:743:in `check_pending_migrations'
+activerecord (8.0.2) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.2) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.2) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.2) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.2) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.2) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.16) lib/rack/method_override.rb:28:in `call'
+rack (3.1.16) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.16) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.2) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2025-07-25 12:51:27 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 4 pending migrations:
+
+db/migrate/20250724044235_create_users.rb
+db/migrate/20250724100319_create_csv_uploads.rb
+db/migrate/20250725052815_create_bulk_charges.rb
+db/migrate/20250725052924_create_charge_results.rb
+
+
+):
+  
+activerecord (8.0.2) lib/active_record/migration.rb:743:in `check_pending_migrations'
+activerecord (8.0.2) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.2) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.2) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.2) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.2) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.2) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.16) lib/rack/method_override.rb:28:in `call'
+rack (3.1.16) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.16) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.2) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-07-25 12:51:27 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 4 pending migrations:
+
+db/migrate/20250724044235_create_users.rb
+db/migrate/20250724100319_create_csv_uploads.rb
+db/migrate/20250725052815_create_bulk_charges.rb
+db/migrate/20250725052924_create_charge_results.rb
+
+
+):
+  
+activerecord (8.0.2) lib/active_record/migration.rb:743:in `check_pending_migrations'
+activerecord (8.0.2) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.2) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.2) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.2) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.2) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.2) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.2) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.2) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.16) lib/rack/method_override.rb:28:in `call'
+rack (3.1.16) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.16) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.2) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.2) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Migrating to CreateUsers (20250724044235)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250724044235') RETURNING "version" /*application='BulkExercise'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+Migrating to CreateCsvUploads (20250724100319)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "csv_uploads" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250724100319') RETURNING "version" /*application='BulkExercise'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+Migrating to CreateBulkCharges (20250725052815)
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "bulk_charges" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "status" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250725052815') RETURNING "version" /*application='BulkExercise'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+Migrating to CreateChargeResults (20250725052924)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "charge_results" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "bulk_charge_id" integer NOT NULL, "row_number" integer, "status" varchar, "omise_charge_id" varchar, "token_response" json, "charge_response" json, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a0a77797b6"
+FOREIGN KEY ("bulk_charge_id")
+  REFERENCES "bulk_charges" ("id")
+) /*application='BulkExercise'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_charge_results_on_bulk_charge_id" ON "charge_results" ("bulk_charge_id") /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250725052924') RETURNING "version" /*application='BulkExercise'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-07-25 12:51:37 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/voravit.s/.rbenv/versions/3.3.8/lib/ruby/gems/3.3.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/voravit.s/.rbenv/versions/3.3.8/lib/ruby/gems/3.3.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 47ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-25 12:51:38 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/voravit.s/.rbenv/versions/3.3.8/lib/ruby/gems/3.3.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/voravit.s/.rbenv/versions/3.3.8/lib/ruby/gems/3.3.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-25 12:51:38 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/voravit.s/.rbenv/versions/3.3.8/lib/ruby/gems/3.3.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/voravit.s/.rbenv/versions/3.3.8/lib/ruby/gems/3.3.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 49ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | GC: 6.2ms)
+Completed 200 OK in 51ms (Views: 17.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 6.2ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Started GET "/" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | GC: 0.0ms)
+Completed 200 OK in 45ms (Views: 6.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 12:51:48 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 12:51:49 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 12:51:49 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 12:51:49 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 12:51:49 +0700
+Started GET "/info" for 127.0.0.1 at 2025-07-25 12:51:49 +0700
+Processing by PagesController#info as HTML
+Filter chain halted as #<Proc:0x000000011f3b82b8 /Users/voravit.s/.rbenv/versions/3.3.8/lib/ruby/gems/3.3.0/gems/actionpack-8.0.2/lib/action_controller/metal/http_authentication.rb:82> rendered or redirected
+Completed 401 Unauthorized in 47ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/info" for 127.0.0.1 at 2025-07-25 12:51:54 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 12:51:56 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/" for 127.0.0.1 at 2025-07-25 12:55:48 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | GC: 9.8ms)
+Completed 200 OK in 127ms (Views: 31.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 9.8ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Started GET "/info" for 127.0.0.1 at 2025-07-25 12:55:49 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 12:56:57 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-07-25 12:56:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/info" for 127.0.0.1 at 2025-07-25 12:56:57 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/" for 127.0.0.1 at 2025-07-25 12:56:59 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | GC: 0.2ms)
+Completed 200 OK in 44ms (Views: 10.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/info" for 127.0.0.1 at 2025-07-25 12:57:00 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 12:57:00 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Migrating to DropCsvUploads (20250725055806)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[35m (3.0ms)[0m  [1m[35mDROP TABLE "csv_uploads" /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250725055806') RETURNING "version" /*application='BulkExercise'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Started GET "/info" for 127.0.0.1 at 2025-07-25 12:58:49 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 12:58:50 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/" for 127.0.0.1 at 2025-07-25 12:58:52 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | GC: 0.1ms)
+Completed 200 OK in 47ms (Views: 7.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/info" for 127.0.0.1 at 2025-07-25 12:58:53 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:07:33 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:07:35 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 6.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:07:37 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:08:28 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.6ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:08:40 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:08:41 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:08:54 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:08:55 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:09:48 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:09:49 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:09:49 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:09:51 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | GC: 0.0ms)
+Completed 200 OK in 57ms (Views: 10.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:09:53 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:10:26 +0700
+Processing by PagesController#info as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (Duration: 4.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `any?' for nil)
+Caused by: NoMethodError (undefined method `any?' for nil)
+
+Information for: ActionView::Template::Error (undefined method `any?' for nil):
+     6:   <%= f.submit "Upload CSV" %>
+     7: <% end %>
+     8: 
+     9: <% if @uploaded_files.any? %>
+    10:   <h2>Uploaded Files</h2>
+    11:   <table border="1">
+    12:     <thead>
+  
+app/views/pages/info.html.erb:9
+
+Information for cause: NoMethodError (undefined method `any?' for nil):
+  
+app/views/pages/info.html.erb:9
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:10:27 +0700
+Processing by PagesController#info as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `any?' for nil)
+Caused by: NoMethodError (undefined method `any?' for nil)
+
+Information for: ActionView::Template::Error (undefined method `any?' for nil):
+     6:   <%= f.submit "Upload CSV" %>
+     7: <% end %>
+     8: 
+     9: <% if @uploaded_files.any? %>
+    10:   <h2>Uploaded Files</h2>
+    11:   <table border="1">
+    12:     <thead>
+  
+app/views/pages/info.html.erb:9
+
+Information for cause: NoMethodError (undefined method `any?' for nil):
+  
+app/views/pages/info.html.erb:9
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:10:28 +0700
+Processing by PagesController#info as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `any?' for nil)
+Caused by: NoMethodError (undefined method `any?' for nil)
+
+Information for: ActionView::Template::Error (undefined method `any?' for nil):
+     6:   <%= f.submit "Upload CSV" %>
+     7: <% end %>
+     8: 
+     9: <% if @uploaded_files.any? %>
+    10:   <h2>Uploaded Files</h2>
+    11:   <table border="1">
+    12:     <thead>
+  
+app/views/pages/info.html.erb:9
+
+Information for cause: NoMethodError (undefined method `any?' for nil):
+  
+app/views/pages/info.html.erb:9
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:10:40 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:10:41 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:11:23 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:11:24 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:11:25 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:11:30 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:11:31 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:11:56 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:11:57 +0700
+Processing by PagesController#info as HTML
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/pages_controller.rb:9:in `info'
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:13:28 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>)
+Caused by: NameError (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>)
+
+Information for: ActionView::Template::Error (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>):
+    2: <%# Have a link for the user to go to the csv file uploading %>
+    3: <%# Redirect user to the info page for auth %>
+    4: <p>
+    5:   <%= link_to "Go to Info Page", bulk_charge_path %>
+    6: </p>
+  
+app/views/pages/index.html.erb:5
+
+Information for cause: NameError (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>):
+  
+app/views/pages/index.html.erb:5
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:13:28 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>)
+Caused by: NameError (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>)
+
+Information for: ActionView::Template::Error (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>):
+    2: <%# Have a link for the user to go to the csv file uploading %>
+    3: <%# Redirect user to the info page for auth %>
+    4: <p>
+    5:   <%= link_to "Go to Info Page", bulk_charge_path %>
+    6: </p>
+  
+app/views/pages/index.html.erb:5
+
+Information for cause: NameError (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>):
+  
+app/views/pages/index.html.erb:5
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:13:30 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.1ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>)
+Caused by: NameError (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>)
+
+Information for: ActionView::Template::Error (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>):
+    2: <%# Have a link for the user to go to the csv file uploading %>
+    3: <%# Redirect user to the info page for auth %>
+    4: <p>
+    5:   <%= link_to "Go to Info Page", bulk_charge_path %>
+    6: </p>
+  
+app/views/pages/index.html.erb:5
+
+Information for cause: NameError (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>):
+  
+app/views/pages/index.html.erb:5
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:13:31 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>)
+Caused by: NameError (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>)
+
+Information for: ActionView::Template::Error (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>):
+    2: <%# Have a link for the user to go to the csv file uploading %>
+    3: <%# Redirect user to the info page for auth %>
+    4: <p>
+    5:   <%= link_to "Go to Info Page", bulk_charge_path %>
+    6: </p>
+  
+app/views/pages/index.html.erb:5
+
+Information for cause: NameError (undefined local variable or method `bulk_charge_path' for an instance of #<Class:0x00000001384329f0>):
+  
+app/views/pages/index.html.erb:5
+Started GET "/info" for 127.0.0.1 at 2025-07-25 13:13:36 +0700
+Processing by PagesController#info as HTML
+Filter chain halted as #<Proc:0x00000001382198a8 /Users/voravit.s/.rbenv/versions/3.3.8/lib/ruby/gems/3.3.0/gems/actionpack-8.0.2/lib/action_controller/metal/http_authentication.rb:82> rendered or redirected
+Completed 401 Unauthorized in 37ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:13:58 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"bulk_charges"}, missing required keys: [:id])
+Caused by: ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"bulk_charges"}, missing required keys: [:id])
+
+Information for: ActionView::Template::Error (No route matches {:action=>"show", :controller=>"bulk_charges"}, missing required keys: [:id]):
+    2: <%# Have a link for the user to go to the csv file uploading %>
+    3: <%# Redirect user to the info page for auth %>
+    4: <p>
+    5:   <%= link_to "Go to Info Page", bulk_charge_path %>
+    6: </p>
+  
+app/views/pages/index.html.erb:5
+
+Information for cause: ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"bulk_charges"}, missing required keys: [:id]):
+  
+app/views/pages/index.html.erb:5
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:13:59 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"bulk_charges"}, missing required keys: [:id])
+Caused by: ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"bulk_charges"}, missing required keys: [:id])
+
+Information for: ActionView::Template::Error (No route matches {:action=>"show", :controller=>"bulk_charges"}, missing required keys: [:id]):
+    2: <%# Have a link for the user to go to the csv file uploading %>
+    3: <%# Redirect user to the info page for auth %>
+    4: <p>
+    5:   <%= link_to "Go to Info Page", bulk_charge_path %>
+    6: </p>
+  
+app/views/pages/index.html.erb:5
+
+Information for cause: ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"bulk_charges"}, missing required keys: [:id]):
+  
+app/views/pages/index.html.erb:5
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:15:11 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | GC: 0.5ms)
+Completed 200 OK in 44ms (Views: 13.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:15:11 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | GC: 0.0ms)
+Completed 200 OK in 54ms (Views: 3.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 13:15:11 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 13:15:11 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 13:15:11 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 13:15:11 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 13:15:12 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 13:15:12 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 13:15:12 +0700
+Started GET "/bulk_charges" for 127.0.0.1 at 2025-07-25 13:15:12 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/bulk_charges"):
+  
+Started GET "/bulk_charges" for 127.0.0.1 at 2025-07-25 13:15:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/bulk_charges"):
+  
+Started GET "/bulk_charges" for 127.0.0.1 at 2025-07-25 13:18:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/bulk_charges"):
+  
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:18:07 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 9.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 13:18:08 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.6ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Migrating to AddStatusToBulkCharges (20250725061929)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "bulk_charges" ADD "status" integer DEFAULT 0 /*application='BulkExercise'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Migrating to DropCsvUploads (20250725055806)
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Migrating to AddStatusToBulkCharges (20250725061929)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "bulk_charges" ADD "status" integer DEFAULT 0 /*application='BulkExercise'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Migrating to ChangeStatusToIntegerInBulkCharges (20250725062114)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mPRAGMA foreign_keys /*application='BulkExercise'*/[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys /*application='BulkExercise'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON /*application='BulkExercise'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF /*application='BulkExercise'*/[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TEMPORARY TABLE "abulk_charges" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "status" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='BulkExercise'*/[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "abulk_charges" ("id","status","created_at","updated_at")
+                     SELECT "id","status","created_at","updated_at" FROM "bulk_charges" /*application='BulkExercise'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "bulk_charges" /*application='BulkExercise'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "bulk_charges" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "status" integer DEFAULT 0, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='BulkExercise'*/[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("id","status","created_at","updated_at")
+                     SELECT "id","status","created_at","updated_at" FROM "abulk_charges" /*application='BulkExercise'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "abulk_charges" /*application='BulkExercise'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0 /*application='BulkExercise'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1 /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250725062114') RETURNING "version" /*application='BulkExercise'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 13:21:37 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 13:21:38 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 13:21:39 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 13:21:40 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 13:21:41 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:6:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:22:31 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | GC: 0.0ms)
+Completed 200 OK in 70ms (Views: 14.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 13:22:33 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 11.3ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:22:35 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.0ms)
+Completed 200 OK in 49ms (Views: 4.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-07-25 13:22:45 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 12.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-07-25 13:22:45 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 13:22:45 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 13:22:45 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 13:22:45 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 13:22:45 +0700
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 13:22:45 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 13:22:45 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 13:22:45 +0700
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 13:22:46 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 13:22:48 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:01:28 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.9ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:03:42 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:03:43 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:03:43 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:04:19 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:04:20 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2025-07-25 15:04:21 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | GC: 0.0ms)
+Completed 200 OK in 50ms (Views: 16.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:04:22 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:08:26 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:10:31 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BulkExercise'*/[0m
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2025-07-25 15:10:34 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | GC: 0.0ms)
+Completed 200 OK in 48ms (Views: 14.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:10:35 +0700
+Processing by BulkchargesController#index as HTML
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/models/bulk_charge.rb:5:in `<class:BulkCharge>'
+app/models/bulk_charge.rb:1:in `<main>'
+app/controllers/bulkcharges_controller.rb:3:in `index'
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:11:15 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.3ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:12
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 3.3ms | GC: 1.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | GC: 3.1ms)
+Completed 200 OK in 61ms (Views: 12.8ms | ActiveRecord: 4.1ms (1 query, 0 cached) | GC: 12.8ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:11:16 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.3ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:12
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | GC: 0.0ms)
+Completed 200 OK in 46ms (Views: 4.6ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:11:16 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:11:16 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:11:16 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:11:16 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:11:16 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:11:16 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:11:16 +0700
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:15:40 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (8.3ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:12
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 10.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | GC: 0.0ms)
+Completed 200 OK in 58ms (Views: 8.2ms | ActiveRecord: 8.2ms (1 query, 0 cached) | GC: 5.9ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:17:38 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:12
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.0ms)
+Completed 200 OK in 48ms (Views: 8.3ms | ActiveRecord: 6.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:17:39 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:12
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 3.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | GC: 0.0ms)
+Completed 200 OK in 56ms (Views: 5.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:17:39 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:17:39 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:17:39 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:17:39 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:17:39 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:17:39 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:17:39 +0700
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:18:13 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:13
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 2.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | GC: 0.0ms)
+Completed 200 OK in 75ms (Views: 8.8ms | ActiveRecord: 2.8ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:18:14 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:13
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | GC: 0.1ms)
+Completed 200 OK in 41ms (Views: 6.6ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:18:14 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:18:14 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:18:14 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:18:14 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:18:15 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:18:15 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:18:15 +0700
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:18:35 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:12
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.0ms)
+Completed 200 OK in 42ms (Views: 7.2ms | ActiveRecord: 2.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:18:36 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.3ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:12
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 9.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | GC: 0.0ms)
+Completed 200 OK in 59ms (Views: 11.2ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:18:36 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:18:36 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:18:36 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:18:36 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:18:36 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:18:36 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:18:36 +0700
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:18:56 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.4ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:12
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 5.5ms | ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:18:59 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.6ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:12
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 2.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | GC: 0.0ms)
+Completed 200 OK in 61ms (Views: 13.9ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='BulkExercise'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION /*application='BulkExercise'*/[0m
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:22:52 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.3ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | GC: 0.1ms)
+Completed 200 OK in 49ms (Views: 9.1ms | ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:22:52 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | GC: 0.0ms)
+Completed 200 OK in 55ms (Views: 5.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:22:53 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:22:53 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:22:53 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:22:53 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:22:53 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:22:53 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:22:53 +0700
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:24:12 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 4.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | GC: 0.1ms)
+Completed 200 OK in 68ms (Views: 12.4ms | ActiveRecord: 2.5ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:24:13 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.3ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:27:53 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 5.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:29:30 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:29:31 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b9add8>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:30:50 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x00000001284312e0>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x00000001284312e0>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x00000001284312e0>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x00000001284312e0>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:30:51 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x00000001284312e0>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x00000001284312e0>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x00000001284312e0>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x00000001284312e0>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:31:06 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128d34d88>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128d34d88>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128d34d88>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128d34d88>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:31:06 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128d34d88>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128d34d88>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128d34d88>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128d34d88>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:31:22 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b5de88>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b5de88>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b5de88>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x0000000128b5de88>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:32:35 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 4.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a1b4ec0>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a1b4ec0>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a1b4ec0>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a1b4ec0>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:32:36 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a1b4ec0>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a1b4ec0>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a1b4ec0>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a1b4ec0>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:32:42 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a1b4ec0>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a1b4ec0>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a1b4ec0>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a1b4ec0>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:33:58 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a172638>)
+Caused by: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a172638>)
+
+Information for: ActionView::Template::Error (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a172638>):
+    1: <h1>Upload Bulk Charge CSV</h1>
+    2: 
+    3: <%= form_with model: @bulk_charge, local: true, multipart: true do |f| %>
+    4:   <div>
+    5:     <%= f.label :csv_file, "CSV File" %>
+    6:     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
+  
+app/views/bulkcharges/new.html.erb:3
+
+Information for cause: NoMethodError (undefined method `bulk_charges_path' for an instance of #<Class:0x000000012a172638>):
+  
+app/views/bulkcharges/new.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:33:59 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 8.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | GC: 0.0ms)
+Completed 200 OK in 50ms (Views: 12.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:33:59 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:33:59 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:33:59 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:33:59 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:34:00 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:34:00 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:34:00 +0700
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:34:00 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 52ms (Views: 14.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:34:00 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:34:00 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:34:00 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:34:00 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:34:01 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:34:01 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:34:01 +0700
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:34:01 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 55ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:34:01 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:34:01 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:34:01 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:34:01 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:34:01 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:34:01 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:34:01 +0700
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:34:02 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.0ms)
+Completed 200 OK in 39ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:34:02 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:34:02 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:34:02 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:34:02 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:34:02 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:34:02 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:34:02 +0700
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:34:03 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 46ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:34:03 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:34:03 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:34:03 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:34:03 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:34:03 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:34:03 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:34:03 +0700
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:34:08 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (4.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 12.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | GC: 0.0ms)
+Completed 200 OK in 59ms (Views: 11.9ms | ActiveRecord: 4.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:34:09 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0000000129156740 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-sw8l58.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+[36m  Disk Storage (1.9ms) [0m[34mDownloaded file from key: qangbwv0r6k10hkase1qy9fli2ns[0m
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.5ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+  
+ActiveStorage::FileNotFoundError (ActiveStorage::FileNotFoundError)
+Caused by: Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/voravit.s/Desktop/bulk-exercise/storage/qa/ng/qangbwv0r6k10hkase1qy9fli2ns)
+
+Information for: ActiveStorage::FileNotFoundError (ActiveStorage::FileNotFoundError):
+  
+app/controllers/bulkcharges_controller.rb:20:in `create'
+
+Information for cause: Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/voravit.s/Desktop/bulk-exercise/storage/qa/ng/qangbwv0r6k10hkase1qy9fli2ns):
+  
+app/controllers/bulkcharges_controller.rb:20:in `create'
+Started GET "/bulkcharges/" for 127.0.0.1 at 2025-07-25 15:35:44 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (3.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 7.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | GC: 0.1ms)
+Completed 200 OK in 59ms (Views: 10.7ms | ActiveRecord: 3.0ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:35:46 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | GC: 0.0ms)
+Completed 200 OK in 40ms (Views: 4.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:35:51 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x000000012a4fae68 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-a5j3sy.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+[36m  Disk Storage (0.7ms) [0m[34mDownloaded file from key: ca0a1gph80rknt8tsao95ye3k4v5[0m
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.0ms)
+
+
+  
+ActiveStorage::FileNotFoundError (ActiveStorage::FileNotFoundError)
+Caused by: Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/voravit.s/Desktop/bulk-exercise/storage/ca/0a/ca0a1gph80rknt8tsao95ye3k4v5)
+
+Information for: ActiveStorage::FileNotFoundError (ActiveStorage::FileNotFoundError):
+  
+app/controllers/bulkcharges_controller.rb:20:in `create'
+
+Information for cause: Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/voravit.s/Desktop/bulk-exercise/storage/ca/0a/ca0a1gph80rknt8tsao95ye3k4v5):
+  
+app/controllers/bulkcharges_controller.rb:20:in `create'
+Started GET "/bulkcharges/" for 127.0.0.1 at 2025-07-25 15:36:30 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | GC: 0.0ms)
+Completed 200 OK in 51ms (Views: 13.5ms | ActiveRecord: 2.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:36:32 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 4.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | GC: 0.0ms)
+Completed 200 OK in 60ms (Views: 6.3ms | ActiveRecord: 0.3ms (0 queries, 0 cached) | GC: 10.1ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:36:34 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (1.9ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 3.5ms | GC: 1.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | GC: 1.8ms)
+Completed 200 OK in 46ms (Views: 4.4ms | ActiveRecord: 1.9ms (1 query, 0 cached) | GC: 1.8ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:36:35 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x000000012887f1f8 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-mp8129.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (0.7ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 08:36:35.251613', '2025-07-25 08:36:35.251613') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('nkyx8udz2bi6f61mmqbhn8kjbrc0', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 146, 'JffgweRUEq+pPU/xAdjyYw==', '2025-07-25 08:36:35.272123') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 1, 1, '2025-07-25 08:36:35.274911') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.1ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:36:35.277823' WHERE "bulk_charges"."id" = 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.9ms) [0m[32mUploaded file to key: nkyx8udz2bi6f61mmqbhn8kjbrc0 (checksum: JffgweRUEq+pPU/xAdjyYw==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (0.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:36:35.303546' WHERE "bulk_charges"."id" = 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: nkyx8udz2bi6f61mmqbhn8kjbrc0[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/1
+Completed 302 Found in 142ms (ActiveRecord: 4.3ms (9 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/bulkcharges/1" for 127.0.0.1 at 2025-07-25 15:36:35 +0700
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 1 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_bulk_charge_path' for an instance of #<Class:0x0000000128b70e70>)
+Caused by: NameError (undefined local variable or method `new_bulk_charge_path' for an instance of #<Class:0x0000000128b70e70>)
+
+Information for: ActionView::Template::Error (undefined local variable or method `new_bulk_charge_path' for an instance of #<Class:0x0000000128b70e70>):
+    1: <h1>Bulk Charges</h1>
+    2: 
+    3: <%= link_to "New Bulk Charge", new_bulk_charge_path, class: "button" %>
+    4: 
+    5: <table border="1">
+    6:   <thead>
+  
+app/views/bulkcharges/show.html.erb:3
+
+Information for cause: NameError (undefined local variable or method `new_bulk_charge_path' for an instance of #<Class:0x0000000128b70e70>):
+  
+app/views/bulkcharges/show.html.erb:3
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:37:24 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | GC: 0.2ms)
+Completed 200 OK in 42ms (Views: 9.4ms | ActiveRecord: 1.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:37:28 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.8ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 7.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | GC: 0.0ms)
+Completed 200 OK in 57ms (Views: 9.1ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:37:28 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x000000012a2fd2f0 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-1ysl45.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (0.4ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 08:37:28.443505', '2025-07-25 08:37:28.443505') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('2bsfwc9rcjsbebqg0q7ihk1snamm', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 146, 'JffgweRUEq+pPU/xAdjyYw==', '2025-07-25 08:37:28.454187') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 2, 2, '2025-07-25 08:37:28.460551') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:37:28.465459' WHERE "bulk_charges"."id" = 2 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.4ms) [0m[32mUploaded file to key: 2bsfwc9rcjsbebqg0q7ihk1snamm (checksum: JffgweRUEq+pPU/xAdjyYw==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (4.6ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 2 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 2 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 2 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:37:28.491078' WHERE "bulk_charges"."id" = 2 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: 2bsfwc9rcjsbebqg0q7ihk1snamm[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/2
+Completed 302 Found in 138ms (ActiveRecord: 6.9ms (9 queries, 0 cached) | GC: 36.7ms)
+
+
+Started GET "/bulkcharges/2" for 127.0.0.1 at 2025-07-25 15:37:28 +0700
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 2 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 3.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil)
+Caused by: NoMethodError (undefined method `each' for nil)
+
+Information for: ActionView::Template::Error (undefined method `each' for nil):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @bulk_charges.each do |bulk_charge| %>
+    14:       <tr>
+    15:         <td><%= bulk_charge.id %></td>
+    16:         <td><%= bulk_charge.status %></td>
+  
+app/views/bulkcharges/show.html.erb:13
+
+Information for cause: NoMethodError (undefined method `each' for nil):
+  
+app/views/bulkcharges/show.html.erb:13
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:37:40 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | GC: 0.0ms)
+Completed 200 OK in 45ms (Views: 9.2ms | ActiveRecord: 1.2ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:37:44 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x00000001295551e8 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-mw67y3.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (0.1ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 08:37:44.222685', '2025-07-25 08:37:44.222685') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 3 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('efjs6zkqrpfmh0moy8f44vkor7rk', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 146, 'JffgweRUEq+pPU/xAdjyYw==', '2025-07-25 08:37:44.231528') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 3, 3, '2025-07-25 08:37:44.232496') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:37:44.234968' WHERE "bulk_charges"."id" = 3 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (1.0ms) [0m[32mUploaded file to key: efjs6zkqrpfmh0moy8f44vkor7rk (checksum: JffgweRUEq+pPU/xAdjyYw==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (2.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 3 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 3 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 3 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:37:44.257441' WHERE "bulk_charges"."id" = 3 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: efjs6zkqrpfmh0moy8f44vkor7rk[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/3
+Completed 302 Found in 90ms (ActiveRecord: 4.4ms (9 queries, 0 cached) | GC: 17.8ms)
+
+
+Started GET "/bulkcharges/3" for 127.0.0.1 at 2025-07-25 15:37:44 +0700
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 3 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 2.7ms | GC: 1.9ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 2.4ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 9.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil)
+Caused by: NoMethodError (undefined method `empty?' for nil)
+
+Information for: ActionView::Template::Error (undefined method `empty?' for nil):
+    11:   </thead>
+    12:   <tbody>
+    13: 
+    14:     <% if @bulk_charges.empty? %>
+    15:       <tr>
+    16:         <td colspan="4">No bulk charges found.</td>
+    17:       </tr>
+  
+app/views/bulkcharges/show.html.erb:14
+
+Information for cause: NoMethodError (undefined method `empty?' for nil):
+  
+app/views/bulkcharges/show.html.erb:14
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:37:53 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | GC: 0.2ms)
+Completed 200 OK in 45ms (Views: 6.0ms | ActiveRecord: 1.1ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:37:53 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:37:54 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:37:54 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:37:54 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:37:54 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:37:54 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:37:54 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:37:54 +0700
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:37:55 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 5.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | GC: 0.0ms)
+Completed 200 OK in 61ms (Views: 5.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/bulkcharges/3" for 127.0.0.1 at 2025-07-25 15:38:03 +0700
+Processing by BulkchargesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBulkCharge Load (1.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 3 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 4.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil)
+Caused by: NoMethodError (undefined method `each' for nil)
+
+Information for: ActionView::Template::Error (undefined method `each' for nil):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @bulk_charges.each do |bulk_charge| %>
+    14:       <tr>
+    15:         <td><%= bulk_charge.id %></td>
+    16:         <td><%= bulk_charge.status %></td>
+  
+app/views/bulkcharges/show.html.erb:13
+
+Information for cause: NoMethodError (undefined method `each' for nil):
+  
+app/views/bulkcharges/show.html.erb:13
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:38:05 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 54ms (Views: 2.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:38:06 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:38:16 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 50ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:38:21 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.3ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | GC: 10.2ms)
+Completed 200 OK in 63ms (Views: 15.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 10.2ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:38:22 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x000000012677fd90 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-ndhyz0.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (0.3ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 08:38:22.099016', '2025-07-25 08:38:22.099016') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('flr9r8w24yrbzkhrdpnfhp6v7ho3', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 146, 'JffgweRUEq+pPU/xAdjyYw==', '2025-07-25 08:38:22.111307') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 4, 4, '2025-07-25 08:38:22.113900') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:38:22.115187' WHERE "bulk_charges"."id" = 4 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.8ms) [0m[32mUploaded file to key: flr9r8w24yrbzkhrdpnfhp6v7ho3 (checksum: JffgweRUEq+pPU/xAdjyYw==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (0.8ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 4 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 4 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 4 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.1ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:38:22.128186' WHERE "bulk_charges"."id" = 4 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: flr9r8w24yrbzkhrdpnfhp6v7ho3[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/4
+Completed 302 Found in 115ms (ActiveRecord: 3.1ms (9 queries, 0 cached) | GC: 3.2ms)
+
+
+Started GET "/bulkcharges/4" for 127.0.0.1 at 2025-07-25 15:38:22 +0700
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 4 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil)
+Caused by: NoMethodError (undefined method `each' for nil)
+
+Information for: ActionView::Template::Error (undefined method `each' for nil):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @bulk_charges.each do |bulk_charge| %>
+    14:       <tr>
+    15:         <td><%= bulk_charge.id %></td>
+    16:         <td><%= bulk_charge.status %></td>
+  
+app/views/bulkcharges/show.html.erb:13
+
+Information for cause: NoMethodError (undefined method `each' for nil):
+  
+app/views/bulkcharges/show.html.erb:13
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:38:23 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 55ms (Views: 3.2ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:38:23 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 1.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:38:24 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 55ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:38:44 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.4ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 4.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | GC: 0.0ms)
+Completed 200 OK in 57ms (Views: 7.6ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:39:02 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 5.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | GC: 0.0ms)
+Completed 200 OK in 41ms (Views: 9.1ms | ActiveRecord: 1.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:39:02 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | GC: 0.0ms)
+Completed 200 OK in 51ms (Views: 3.6ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:39:03 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:39:03 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:39:03 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:39:03 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:39:03 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:39:03 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:39:03 +0700
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:39:11 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 6.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | GC: 0.0ms)
+Completed 200 OK in 46ms (Views: 15.6ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:39:12 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:15
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 50ms (Views: 2.0ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:39:12 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:39:12 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:39:12 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:39:12 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:39:12 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:39:12 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:39:12 +0700
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:39:13 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 51ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:39:25 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 4.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:39:28 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x000000012a4f9478 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-6nohh6.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (0.2ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 08:39:29.063360', '2025-07-25 08:39:29.063360') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('08yg6jonpl96n8p3ehuu2ajie48a', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 146, 'JffgweRUEq+pPU/xAdjyYw==', '2025-07-25 08:39:29.069250') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 5, 5, '2025-07-25 08:39:29.071049') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:39:29.072360' WHERE "bulk_charges"."id" = 5 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.4ms) [0m[32mUploaded file to key: 08yg6jonpl96n8p3ehuu2ajie48a (checksum: JffgweRUEq+pPU/xAdjyYw==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (0.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 5 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 5 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 5 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:39:29.079661' WHERE "bulk_charges"."id" = 5 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: 08yg6jonpl96n8p3ehuu2ajie48a[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/5
+Completed 302 Found in 104ms (ActiveRecord: 2.9ms (9 queries, 0 cached) | GC: 4.6ms)
+
+
+Started GET "/bulkcharges/5" for 127.0.0.1 at 2025-07-25 15:39:29 +0700
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 5 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil)
+Caused by: NoMethodError (undefined method `each' for nil)
+
+Information for: ActionView::Template::Error (undefined method `each' for nil):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @bulk_charges.each do |bulk_charge| %>
+    14:       <tr>
+    15:         <td><%= bulk_charge.id %></td>
+    16:         <td><%= bulk_charge.status %></td>
+  
+app/views/bulkcharges/show.html.erb:13
+
+Information for cause: NoMethodError (undefined method `each' for nil):
+  
+app/views/bulkcharges/show.html.erb:13
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:41:00 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | GC: 0.0ms)
+Completed 200 OK in 48ms (Views: 6.8ms | ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:41:03 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.4ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:14
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 3.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | GC: 0.0ms)
+Completed 200 OK in 48ms (Views: 4.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:41:04 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x000000012b3766e0 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-ugaisk.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (0.1ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 08:41:04.095771', '2025-07-25 08:41:04.095771') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('qnzwn6dlr3jl2ka50fzuiyj5850r', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 228, 'dDBfLGWMgRqiqhx6yZJH2w==', '2025-07-25 08:41:04.104160') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 6, 6, '2025-07-25 08:41:04.105854') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:41:04.106938' WHERE "bulk_charges"."id" = 6 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.9ms) [0m[32mUploaded file to key: qnzwn6dlr3jl2ka50fzuiyj5850r (checksum: dDBfLGWMgRqiqhx6yZJH2w==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (0.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 6 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 6 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 6 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:41:04.115423' WHERE "bulk_charges"."id" = 6 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: qnzwn6dlr3jl2ka50fzuiyj5850r[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/6
+Completed 302 Found in 74ms (ActiveRecord: 2.0ms (9 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/6" for 127.0.0.1 at 2025-07-25 15:41:04 +0700
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 6 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil)
+Caused by: NoMethodError (undefined method `each' for nil)
+
+Information for: ActionView::Template::Error (undefined method `each' for nil):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @bulk_charges.each do |bulk_charge| %>
+    14:       <tr>
+    15:         <td><%= bulk_charge.id %></td>
+    16:         <td><%= bulk_charge.status %></td>
+  
+app/views/bulkcharges/show.html.erb:13
+
+Information for cause: NoMethodError (undefined method `each' for nil):
+  
+app/views/bulkcharges/show.html.erb:13
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:41:40 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 8.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | GC: 0.0ms)
+Completed 200 OK in 53ms (Views: 12.4ms | ActiveRecord: 4.7ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:41:41 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 36ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-25 15:41:41 +0700
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-25 15:41:41 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-25 15:41:41 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-25 15:41:41 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-25 15:41:41 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-25 15:41:41 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-25 15:41:41 +0700
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:41:44 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x000000012b032038 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-w08bk.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (0.1ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 08:41:44.535681', '2025-07-25 08:41:44.535681') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 7 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('q3ztcyjqcwe5lyq6xqxskcl7dtj3', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 228, 'dDBfLGWMgRqiqhx6yZJH2w==', '2025-07-25 08:41:44.540173') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 7, 7, '2025-07-25 08:41:44.542468') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.1ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:41:44.544845' WHERE "bulk_charges"."id" = 7 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.8ms) [0m[32mUploaded file to key: q3ztcyjqcwe5lyq6xqxskcl7dtj3 (checksum: dDBfLGWMgRqiqhx6yZJH2w==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (0.6ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 7 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 7 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 7 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:41:44.571995' WHERE "bulk_charges"."id" = 7 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: q3ztcyjqcwe5lyq6xqxskcl7dtj3[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/7
+Completed 302 Found in 127ms (ActiveRecord: 3.1ms (9 queries, 0 cached) | GC: 14.9ms)
+
+
+Started GET "/bulkcharges/7" for 127.0.0.1 at 2025-07-25 15:41:44 +0700
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"7"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 7 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 1.9ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 2.2ms)
+
+
+Started GET "/bulkcharges/" for 127.0.0.1 at 2025-07-25 15:42:01 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.7ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:14
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 6.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | GC: 0.0ms)
+Completed 200 OK in 52ms (Views: 8.4ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mActiveStorage::Blob Load (3.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" /*application='BulkExercise'*/[0m
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-25 15:45:34 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | GC: 0.4ms)
+Completed 200 OK in 42ms (Views: 6.7ms | ActiveRecord: 1.7ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-25 15:45:37 +0700
+Processing by BulkchargesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x000000012b114bb8 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250725-80751-s7wdzd.csv>, @content_type="text/csv", @original_filename="bulk-exercise - Sheet1.csv", @headers="Content-Disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise - Sheet1.csv\"\r\nContent-Type: text/csv\r\n">}, "commit"=>"Upload"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Create (0.9ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (0, '2025-07-25 08:45:38.094337', '2025-07-25 08:45:38.094337') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ('eyqacx22sy02fyfkbq0qx0m737dx', 'bulk-exercise - Sheet1.csv', 'text/csv', '{"identified":true}', 'local', 228, 'dDBfLGWMgRqiqhx6yZJH2w==', '2025-07-25 08:45:38.106229') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ('csv_file', 'BulkCharge', 8, 8, '2025-07-25 08:45:38.111094') RETURNING "id" /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:45:38.112645' WHERE "bulk_charges"."id" = 8 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.7ms) [0m[32mUploaded file to key: eyqacx22sy02fyfkbq0qx0m737dx (checksum: dDBfLGWMgRqiqhx6yZJH2w==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Update (0.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = '{"identified":true,"analyzed":true}' WHERE "active_storage_blobs"."id" = 8 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = 8 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 8 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = '2025-07-25 08:45:38.128501' WHERE "bulk_charges"."id" = 8 /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:14:in `create'
+[36m  Disk Storage (0.4ms) [0m[34mDownloaded file from key: eyqacx22sy02fyfkbq0qx0m737dx[0m
+Redirected to http://127.0.0.1:3000/bulkcharges/8
+Completed 302 Found in 135ms (ActiveRecord: 4.8ms (9 queries, 0 cached) | GC: 4.9ms)
+
+
+Started GET "/bulkcharges/8" for 127.0.0.1 at 2025-07-25 15:45:38 +0700
+Processing by BulkchargesController#show as TURBO_STREAM
+  Parameters: {"id"=>"8"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 8 LIMIT 1 /*action='show',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:29:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 2.0ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" /*application='BulkExercise'*/[0m

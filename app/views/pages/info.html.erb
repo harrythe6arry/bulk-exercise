@@ -1,16 +1,33 @@
-<%# <h1>After user auth</h1> %>
 <h1>Welcome, CSV PAGE</h1>
-<p>
-   <%= @message %>
-</p>
+<p><%= @message %></p>
 
 <%= form_with url: upload_csv_pages_path, local: true, multipart: true do |f| %>
-  <%= f.file_field :csv_file, required: true %>
+  <%= f.file_field :csv_file, required: true, accept: '.csv' %>
   <%= f.submit "Upload CSV" %>
 <% end %>
 
+<% if @uploaded_files.any? %>
+  <h2>Uploaded Files</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>File Name</th>
+        <th>Status</th>
+        <th>Upload Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @uploaded_files.each do |file| %>
+        <tr>
+          <td><%= file.csv_file.filename %></td>
+          <td><%= file.status %></td>
+          <td><%= file.created_at.strftime("%Y-%m-%d %H:%M:%S") %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
 
-<%# going back to te index page %>
 <p>
   <%= link_to "Back to Index", root_path %>
 </p>

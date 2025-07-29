@@ -64,7 +64,7 @@ class ChargeCsvJob
     p "Source token created: #{source_token}"
     p "Token response: #{token_response}"
     begin
-    Omise.api_key = "skey_64hsrbe7jgdvnwd5aqm"
+    Omise.api_key = Rails.application.credentials.omise[:secret_key]
     p "Omise SECRET API key set to: #{Omise.api_key}"
 
     conn = Faraday.new(url: 'https://api.staging-omise.co')

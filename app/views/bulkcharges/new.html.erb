@@ -1,6 +1,7 @@
 <h1>Upload Bulk Charge CSV</h1>
 
 <%= form_with model: @bulk_charge, url: bulkcharges_path, local: true, multipart: true do |f| %>
+
   <div>
     <%= f.label :csv_file, "CSV File" %>
     <%= f.file_field :csv_file, required: true, accept: ".csv" %>
@@ -11,3 +12,9 @@
 <% end %>
 
 <%= link_to "Back to Bulk Charges", bulkcharges_path %>
+
+<script>
+
+  
+
+</script>

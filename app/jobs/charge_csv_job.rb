@@ -4,6 +4,7 @@ class ChargeCsvJob
   require 'faraday'
   require 'json'
   require 'base64'
+  require "omise"
 
   def perform(bulk_charge_id)
     p "Starting ChargeCsvJob for BulkCharge ID: #{bulk_charge_id}"
@@ -63,8 +64,10 @@ class ChargeCsvJob
     source_token = token_response['id']
     p "Source token created: #{source_token}"
     p "Token response: #{token_response}"
+
     begin
     Omise.api_key = Rails.application.credentials.omise[:secret_key]
+    Omise.api_version = "2019-05-29"
     p "Omise SECRET API key set to: #{Omise.api_key}"
 
     conn = Faraday.new(url: 'https://api.staging-omise.co')
@@ -79,7 +82,11 @@ class ChargeCsvJob
       "card" => source_token
     )
       p "Request body: #{req.body}"
-      end
     end
   end
+    rescue => e
+      p "Exception during Omise API call: #{e.class} - #{e.message}"
+      p e.backtrace
+      return
+end
 end

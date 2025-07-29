@@ -442,7 +442,8 @@ DEPENDENCIES
   jbuilder
   json (~> 2.8)
   kamal
-  omise (~> 0.11.0)
+  minitest
+  omise
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.2)

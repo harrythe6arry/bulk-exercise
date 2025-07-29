@@ -17335,3 +17335,70 @@ Processing by BulkchargesController#index as HTML
 Completed 200 OK in 52ms (Views: 7.7ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/bulkcharges/64/csv_preview" for 127.0.0.1 at 2025-07-29 16:52:50 +0700
+Processing by BulkchargesController#csv_preview as HTML
+  Parameters: {"id"=>"64"}
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/csv_preview.html.erb within layouts/application
+  Rendered bulkcharges/csv_preview.html.erb within layouts/application (Duration: 11.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil)
+Caused by: NoMethodError (undefined method `id' for nil)
+
+Information for: ActionView::Template::Error (undefined method `id' for nil):
+    1: <h1>CSV Preview for Bulk Charge #<%= @bulk_charge.id %></h1>
+    2: 
+    3: <% if @csv_rows.any? %>
+    4:   <table border="1">
+  
+app/views/bulkcharges/csv_preview.html.erb:1
+
+Information for cause: NoMethodError (undefined method `id' for nil):
+  
+app/views/bulkcharges/csv_preview.html.erb:1
+Started GET "/bulkcharges/64/csv_preview" for 127.0.0.1 at 2025-07-29 16:52:50 +0700
+Processing by BulkchargesController#csv_preview as HTML
+  Parameters: {"id"=>"64"}
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/csv_preview.html.erb within layouts/application
+  Rendered bulkcharges/csv_preview.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil)
+Caused by: NoMethodError (undefined method `id' for nil)
+
+Information for: ActionView::Template::Error (undefined method `id' for nil):
+    1: <h1>CSV Preview for Bulk Charge #<%= @bulk_charge.id %></h1>
+    2: 
+    3: <% if @csv_rows.any? %>
+    4:   <table border="1">
+  
+app/views/bulkcharges/csv_preview.html.erb:1
+
+Information for cause: NoMethodError (undefined method `id' for nil):
+  
+app/views/bulkcharges/csv_preview.html.erb:1
+Started GET "/bulkcharges/64/csv_preview" for 127.0.0.1 at 2025-07-29 16:53:05 +0700
+Processing by BulkchargesController#csv_preview as HTML
+  Parameters: {"id"=>"64"}
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 64 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:36:in `csv_preview'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 64 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:38:in `csv_preview'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 64 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:39:in `csv_preview'
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: 7oq7hgycrwsvud5ar3z8em4wutn8[0m
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/csv_preview.html.erb within layouts/application
+  Rendered bulkcharges/csv_preview.html.erb within layouts/application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | GC: 0.0ms)
+Completed 200 OK in 83ms (Views: 6.3ms | ActiveRecord: 3.0ms (3 queries, 0 cached) | GC: 0.0ms)
+
+

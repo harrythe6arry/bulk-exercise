@@ -8,6 +8,8 @@
       <th>ID</th>
       <th>Status</th>
       <th>Created At</th>
+      <th>Preview</th>
+      <th>Download</th>
     </tr>
   </thead>
   <tbody>
@@ -20,6 +22,8 @@
       <td>
         <%= link_to "Preview CSV", csv_preview_bulkcharge_path(bulk_charge) %>
       </td>
+      <td>
+        <%= link_to "Download CSV", rails_blob_path(bulk_charge.csv_file, disposition: "attachment") %>
     </tr>
   <% end %>
 </tbody>

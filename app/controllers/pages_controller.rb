@@ -10,5 +10,4 @@ class PagesController < ApplicationController
     @uploaded_files = BulkCharge.all.order(created_at: :desc)
     @message = "This is a simple user authentication system using HTTP Basic Authentication."
   end
-  
 end

@@ -74,3 +74,11 @@ gem 'csv', '~> 3.0'
 gem "bcrypt", "~> 3.1.7"
 
 gem 'active_storage_validations'
+
+gem 'omise'
+
+gem "faraday", "~> 2.13"
+
+gem 'json', '~> 2.8'
+
+gem "minitest"

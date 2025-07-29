@@ -6,7 +6,6 @@ class BulkchargesController < ApplicationController
   def new
     @bulk_charge = BulkCharge.new
   end
-
   def create
   @bulk_charge = BulkCharge.new(bulk_charge_params)
   @bulk_charge.status = :pending
@@ -19,6 +18,10 @@ class BulkchargesController < ApplicationController
       @bulk_charge.destroy
       return render :new, status: :unprocessable_entity
     end
+    p "the job is being enqueued"
+    ChargeCsvJob.perform_async(@bulk_charge.id)
+    p" the job is enqueued with ID #{@bulk_charge.id}"
+    flash[:notice] = "Bulk charge is being processed. You can check the status later"
     redirect_to bulkcharge_path(@bulk_charge), notice: 'Bulk charge was successfully created.'
   else
     render :new, status: :unprocessable_entity

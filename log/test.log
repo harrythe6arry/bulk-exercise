@@ -4041,3 +4041,211 @@ Processing by PagesController#index as HTML
   Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
 Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mFixtures Load (0.2ms)[0m  [1m[31mDELETE FROM "bulk_charges";
+DELETE FROM "charge_results";
+INSERT INTO "bulk_charges" ("id", "status", "created_at", "updated_at") VALUES (980190962, NULL, '2025-07-29 17:04:36.865794', '2025-07-29 17:04:36.865794'), (298486374, NULL, '2025-07-29 17:04:36.865794', '2025-07-29 17:04:36.865794');
+INSERT INTO "charge_results" ("id", "bulk_charge_id", "row_number", "status", "omise_charge_id", "token_response", "charge_response", "created_at", "updated_at") VALUES (980190962, 980190962, 1, 'MyString', 'MyString', NULL, NULL, '2025-07-29 17:04:36.867399', '2025-07-29 17:04:36.867399'), (298486374, 298486374, 1, 'MyString', 'MyString', NULL, NULL, '2025-07-29 17:04:36.867399', '2025-07-29 17:04:36.867399')[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_key_check[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+-----------------------------------------------------------------
+BulkChargeTest: test_should_not_save_bulk_charge_without_csv_file
+-----------------------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+------------------------------------------------------
+BulkChargeTest: test_should_have_one_attached_csv_file
+------------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+---------------------------------------------------------
+BulkChargeTest: test_should_validate_presence_of_csv_file
+---------------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+----------------------------------------------------------
+BulkChargeTest: test_should_save_bulk_charge_with_csv_file
+----------------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBulkCharge Create (0.1ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["status", 0], ["created_at", "2025-07-29 17:04:36.897469"], ["updated_at", "2025-07-29 17:04:36.897469"]]
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 980190963], ["record_type", "BulkCharge"], ["name", "csv_file"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "olkpky72piln99rn9fsnxp04iom7"], ["filename", "bulk-exercise.csv"], ["content_type", "text/csv"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 106], ["checksum", "fkLovX3TvThqJp+XaQAlTg=="], ["created_at", "2025-07-29 17:04:36.902768"]]
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "csv_file"], ["record_type", "BulkCharge"], ["record_id", 980190963], ["blob_id", 1], ["created_at", "2025-07-29 17:04:36.904071"]]
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:36.905279"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[36m  Disk Storage (0.6ms) [0m[32mUploaded file to key: olkpky72piln99rn9fsnxp04iom7 (checksum: fkLovX3TvThqJp+XaQAlTg==)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mActiveStorage::Blob Update (0.2ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 1]]
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = ?[0m  [["id", 980190963]]
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:36.915635"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+------------------------------------------
+PagesControllerTest: test_should_get_index
+------------------------------------------
+Started GET "/" for 127.0.0.1 at 2025-07-29 17:04:36 +0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | GC: 9.2ms)
+Completed 200 OK in 31ms (Views: 17.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 9.2ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+------------------------------------------------
+BulkchargesControllerTest: test_should_get_index
+------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBulkCharge Create (0.3ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["status", 0], ["created_at", "2025-07-29 17:04:37.019218"], ["updated_at", "2025-07-29 17:04:37.019218"]]
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 980190963], ["record_type", "BulkCharge"], ["name", "csv_file"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "kcu8qw3m7j0es7arh19ye6kjoj3i"], ["filename", "bulk-exercise.csv"], ["content_type", "text/csv"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 106], ["checksum", "fkLovX3TvThqJp+XaQAlTg=="], ["created_at", "2025-07-29 17:04:37.029423"]]
+  [1m[36mActiveStorage::Attachment Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "csv_file"], ["record_type", "BulkCharge"], ["record_id", 980190963], ["blob_id", 1], ["created_at", "2025-07-29 17:04:37.031264"]]
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:37.032964"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[36m  Disk Storage (0.5ms) [0m[32mUploaded file to key: kcu8qw3m7j0es7arh19ye6kjoj3i (checksum: fkLovX3TvThqJp+XaQAlTg==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mActiveStorage::Blob Update (0.1ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 1]]
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = ?[0m  [["id", 980190963]]
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:37.044515"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-29 17:04:37 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC[0m
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+---------------------------------------------------------
+BulkchargesControllerTest: test_should_create_bulk_charge
+---------------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBulkCharge Create (0.2ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["status", 0], ["created_at", "2025-07-29 17:04:37.060804"], ["updated_at", "2025-07-29 17:04:37.060804"]]
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 980190963], ["record_type", "BulkCharge"], ["name", "csv_file"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "b8u03bj7llsl2g3fvet2k00ul6wr"], ["filename", "bulk-exercise.csv"], ["content_type", "text/csv"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 106], ["checksum", "fkLovX3TvThqJp+XaQAlTg=="], ["created_at", "2025-07-29 17:04:37.062968"]]
+  [1m[36mActiveStorage::Attachment Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "csv_file"], ["record_type", "BulkCharge"], ["record_id", 980190963], ["blob_id", 1], ["created_at", "2025-07-29 17:04:37.063228"]]
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:37.064298"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[36m  Disk Storage (0.7ms) [0m[32mUploaded file to key: b8u03bj7llsl2g3fvet2k00ul6wr (checksum: fkLovX3TvThqJp+XaQAlTg==)[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mActiveStorage::Blob Update (0.6ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 1]]
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = ?[0m  [["id", 980190963]]
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:37.068939"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBulkCharge Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "bulk_charges"[0m
+Started POST "/bulkcharges" for 127.0.0.1 at 2025-07-29 17:04:37 +0700
+Processing by BulkchargesController#create as HTML
+  Parameters: {"bulk_charge"=>{"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x00000001254b3720 @tempfile=#<Tempfile:/var/folders/b2/xv60d1ms7qs6dlygj1mdc1wm0000gp/T/RackMultipart20250729-79817-o0h3rf.csv>, @content_type="text/csv", @original_filename="bulk-exercise.csv", @headers="content-disposition: form-data; name=\"bulk_charge[csv_file]\"; filename=\"bulk-exercise.csv\"\r\ncontent-type: text/csv\r\ncontent-length: 106\r\n">}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBulkCharge Create (0.2ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["status", 0], ["created_at", "2025-07-29 17:04:37.076700"], ["updated_at", "2025-07-29 17:04:37.076700"]]
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 980190964], ["record_type", "BulkCharge"], ["name", "csv_file"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "81dyo5x19aihqezt6e92un87nxb9"], ["filename", "bulk-exercise.csv"], ["content_type", "text/csv"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 106], ["checksum", "fkLovX3TvThqJp+XaQAlTg=="], ["created_at", "2025-07-29 17:04:37.079395"]]
+  [1m[36mActiveStorage::Attachment Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "csv_file"], ["record_type", "BulkCharge"], ["record_id", 980190964], ["blob_id", 2], ["created_at", "2025-07-29 17:04:37.080336"]]
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:37.081010"], ["id", 980190964]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[36m  Disk Storage (0.4ms) [0m[32mUploaded file to key: 81dyo5x19aihqezt6e92un87nxb9 (checksum: fkLovX3TvThqJp+XaQAlTg==)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mActiveStorage::Blob Update (0.3ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 2]]
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 2]]
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = ?[0m  [["id", 980190964]]
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:37.085971"], ["id", 980190964]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: 81dyo5x19aihqezt6e92un87nxb9[0m
+Redirected to http://www.example.com/bulkcharges/980190964
+Completed 302 Found in 19ms (ActiveRecord: 0.7ms (9 queries, 0 cached) | GC: 0.4ms)
+  [1m[36mBulkCharge Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "bulk_charges"[0m
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+-------------------------------------------------------
+BulkchargesControllerTest: test_should_show_bulk_charge
+-------------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBulkCharge Create (0.2ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["status", 0], ["created_at", "2025-07-29 17:04:37.102835"], ["updated_at", "2025-07-29 17:04:37.102835"]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 980190963], ["record_type", "BulkCharge"], ["name", "csv_file"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "96svnlc683y1ug56yfjztg2jfbby"], ["filename", "bulk-exercise.csv"], ["content_type", "text/csv"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 106], ["checksum", "fkLovX3TvThqJp+XaQAlTg=="], ["created_at", "2025-07-29 17:04:37.106242"]]
+  [1m[36mActiveStorage::Attachment Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "csv_file"], ["record_type", "BulkCharge"], ["record_id", 980190963], ["blob_id", 1], ["created_at", "2025-07-29 17:04:37.107909"]]
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:37.108385"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[36m  Disk Storage (0.8ms) [0m[32mUploaded file to key: 96svnlc683y1ug56yfjztg2jfbby (checksum: fkLovX3TvThqJp+XaQAlTg==)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mActiveStorage::Blob Update (0.1ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 1]]
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = ?[0m  [["id", 980190963]]
+  [1m[36mBulkCharge Update (0.2ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:37.112593"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/bulkcharges/980190963" for 127.0.0.1 at 2025-07-29 17:04:37 +0700
+Processing by BulkchargesController#show as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mBulkCharge Load (2.3ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = ? LIMIT ?[0m  [["id", 980190963], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/show.html.erb within layouts/application
+  Rendered bulkcharges/show.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 1.3ms | ActiveRecord: 1.7ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+----------------------------------------------
+BulkchargesControllerTest: test_should_get_new
+----------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBulkCharge Create (0.4ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["status", 0], ["created_at", "2025-07-29 17:04:37.126897"], ["updated_at", "2025-07-29 17:04:37.126897"]]
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 980190963], ["record_type", "BulkCharge"], ["name", "csv_file"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "j5nre4vil0b7zqzphshu9mx8p3vx"], ["filename", "bulk-exercise.csv"], ["content_type", "text/csv"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 106], ["checksum", "fkLovX3TvThqJp+XaQAlTg=="], ["created_at", "2025-07-29 17:04:37.129345"]]
+  [1m[36mActiveStorage::Attachment Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "csv_file"], ["record_type", "BulkCharge"], ["record_id", 980190963], ["blob_id", 1], ["created_at", "2025-07-29 17:04:37.129867"]]
+  [1m[36mBulkCharge Update (0.1ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:37.130301"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[36m  Disk Storage (0.5ms) [0m[32mUploaded file to key: j5nre4vil0b7zqzphshu9mx8p3vx (checksum: fkLovX3TvThqJp+XaQAlTg==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mActiveStorage::Blob Update (0.0ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 1]]
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = ?[0m  [["id", 980190963]]
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:37.133321"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/bulkcharges/new" for 127.0.0.1 at 2025-07-29 17:04:37 +0700
+Processing by BulkchargesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/new.html.erb within layouts/application
+  Rendered bulkcharges/new.html.erb within layouts/application (Duration: 2.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+---------------------------------------------------
+ChargeResultTest: test_should_belong_to_bulk_charge
+---------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBulkCharge Create (0.2ms)[0m  [1m[32mINSERT INTO "bulk_charges" ("status", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["status", 0], ["created_at", "2025-07-29 17:04:37.149800"], ["updated_at", "2025-07-29 17:04:37.149800"]]
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 980190963], ["record_type", "BulkCharge"], ["name", "csv_file"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Create (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "sg826kkwirv6bzxs6jeyf6snxyve"], ["filename", "bulk-exercise.csv"], ["content_type", "text/csv"], ["metadata", "{\"identified\":true}"], ["service_name", "test"], ["byte_size", 106], ["checksum", "fkLovX3TvThqJp+XaQAlTg=="], ["created_at", "2025-07-29 17:04:37.150982"]]
+  [1m[36mActiveStorage::Attachment Create (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "csv_file"], ["record_type", "BulkCharge"], ["record_id", 980190963], ["blob_id", 1], ["created_at", "2025-07-29 17:04:37.151879"]]
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:37.152319"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[36m  Disk Storage (0.6ms) [0m[32mUploaded file to key: sg826kkwirv6bzxs6jeyf6snxyve (checksum: fkLovX3TvThqJp+XaQAlTg==)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mActiveStorage::Blob Update (0.2ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 1]]
+  [1m[36mBulkCharge Load (0.0ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = ?[0m  [["id", 980190963]]
+  [1m[36mBulkCharge Update (0.0ms)[0m  [1m[33mUPDATE "bulk_charges" SET "updated_at" = ? WHERE "bulk_charges"."id" = ?[0m  [["updated_at", "2025-07-29 17:04:37.155557"], ["id", 980190963]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChargeResult Create (0.1ms)[0m  [1m[32mINSERT INTO "charge_results" ("bulk_charge_id", "row_number", "status", "omise_charge_id", "token_response", "charge_response", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["bulk_charge_id", 980190963], ["row_number", nil], ["status", nil], ["omise_charge_id", nil], ["token_response", "[FILTERED]"], ["charge_response", nil], ["created_at", "2025-07-29 17:04:37.160572"], ["updated_at", "2025-07-29 17:04:37.160572"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m

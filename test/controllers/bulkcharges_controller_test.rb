@@ -25,6 +25,7 @@ end
 
  test "should create bulk charge" do
   assert_difference('BulkCharge.count') do
+    
     post bulkcharges_path, params: { bulk_charge: { csv_file: fixture_file_upload(Rails.root.join("test/fixtures/files/bulk-exercise.csv"), "text/csv") } }
   end
   assert_redirected_to bulkcharge_path(BulkCharge.last)

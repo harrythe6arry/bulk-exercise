@@ -25,13 +25,13 @@ class ChargeCsvJob
   def process_row(bulk_charge, row_data, row_number)
     p "Processing row #{row_number} for BulkCharge ID: #{bulk_charge.id}"
     pkey = Rails.application.credentials.omise[:public_key]
-    card_name = "JOHN DOE"
-    card_city = "Bangkok"
-    card_postal_code = "10320"
-    card_number = "4242424242424242"
-    card_security_code = "123"
-    card_expiration_month = "3"
-    card_expiration_year = "2030"
+    card_name = row_data['name'] || "Default Name"
+    card_city = row_data['city'] || "Default City"
+    card_postal_code = row_data['postal_code'] || "00000"
+    card_number =  row_data['number'] || "4242424242424242" 
+    card_security_code = row_data['security_code'] || "123" 
+    card_expiration_month = row_data['expiration_month'] || "12" 
+    card_expiration_year = row_data['expiration_year'] || "2025" 
 
     begin
     conn = Faraday.new(url: 'https://vault.staging-omise.co')

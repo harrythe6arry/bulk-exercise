@@ -1,0 +1,2 @@
+skey,pkey,pkey,card_name,card_postal_code,card_number,card_security_code,card_expiration_month,card_expiration_month,charge_amount,charge_currency
+abc123,pk_test_123,pk_test_456,John Doe,12345,4111111111111111,123,12,25,1000,THB

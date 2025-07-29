@@ -32,17 +32,16 @@ class BulkchargesController < ApplicationController
     @bulk_charge = BulkCharge.find(params[:id])
     @charge_results = @bulk_charge.charge_results.order(:row_number)
   end
-  def csv_preview
-    @bulk_charge = BulkCharge.find(params[:id])
-    @csv_rows = []
-    if @bulk_charge.csv_file.attached?
-      @bulk_charge.csv_file.blob.open do |file|
-        @csv_rows = CSV.parse(file.read, headers: true)
-      end
-    end
-  end
+  # def csv_preview
+  #   @bulk_charge = BulkCharge.find(params[:id])
+  #   @csv_rows = []
+  #   if @bulk_charge.csv_file.attached?
+  #     @bulk_charge.csv_file.blob.open do |file|
+  #       @csv_rows = CSV.parse(file.read, headers: true)
+  #     end
+  #   end
+  # end
   
-
   private
   
   def bulk_charge_params

@@ -4,5 +4,5 @@ class BulkCharge < ApplicationRecord
 
   enum :status, { pending: 0, in_progress: 1, completed: 2, failed: 3 }
 
-  validates :csv_file, presence: true
+  # validates :csv_file, presence: true
 end

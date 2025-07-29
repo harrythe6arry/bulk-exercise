@@ -1,1 +1,2 @@
 name,city,postal_code,number,security_code,expiration_month,expiration_year,charge_amount,charge_currency
+JOHN DOE,Bangkok,10320,4242424242424242,123,3,2030,1000,THB

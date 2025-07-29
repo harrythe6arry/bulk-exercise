@@ -4,13 +4,14 @@ class BulkchargesControllerTest < ActionDispatch::IntegrationTest
   include ActionDispatch::TestProcess
 
   def setup
-    @bulk_charge = BulkCharge.create!(status: :pending)
-    @bulk_charge.csv_file.attach(
-      io: File.open(Rails.root.join("test/fixtures/files/bulk-exercise.csv")),
-      filename: "bulk-exercise.csv",
-      content_type: "text/csv"
-    )
-  end
+  @bulk_charge = BulkCharge.new(status: :pending)
+  @bulk_charge.csv_file.attach(
+    io: File.open(Rails.root.join("test/fixtures/files/bulk-exercise.csv")),
+    filename: "bulk-exercise.csv",
+    content_type: "text/csv"
+  )
+  @bulk_charge.save!
+end
 
   test "should get index" do
     get bulkcharges_path

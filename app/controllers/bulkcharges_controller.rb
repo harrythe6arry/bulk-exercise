@@ -7,6 +7,7 @@ class BulkchargesController < ApplicationController
     @bulk_charge = BulkCharge.new
   end
   def create
+
   @bulk_charge = BulkCharge.new(bulk_charge_params)
   @bulk_charge.status = :pending
 

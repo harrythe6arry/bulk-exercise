@@ -4,5 +4,11 @@ class BulkCharge < ApplicationRecord
 
   enum :status, { pending: 0, in_progress: 1, completed: 2, failed: 3 }
 
-  # validates :csv_file, presence: true
+  validate :csv_file_presence
+
+  private
+
+  def csv_file_presence
+    errors.add(:csv_file, "can't be blank") unless csv_file.attached?
+  end
 end

@@ -18307,3 +18307,1134 @@ Processing by BulkchargesController#index as HTML
 Completed 200 OK in 191ms (Views: 135.9ms | ActiveRecord: 5.3ms (131 queries, 0 cached) | GC: 18.1ms)
 
 
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-29 17:11:18 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.4ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:17
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 65 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 65 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 64 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 64 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 63 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 63 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 62 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 62 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 61 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 61 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 60 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 60 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 59 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 59 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 58 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 58 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 57 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 57 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 56 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 56 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 55 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 55 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 54 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 54 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 53 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 53 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 52 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 52 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 51 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 51 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 50 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 50 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 49 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 49 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 48 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 48 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 47 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 47 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 46 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 46 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 45 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 45 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 44 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 44 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 43 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 43 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 42 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 42 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 41 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 41 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 40 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 40 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 39 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 39 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 38 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 38 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 37 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 37 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 36 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 36 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 35 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 35 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 34 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 34 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 33 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 33 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 32 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 32 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 31 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 31 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 30 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 30 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 29 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 29 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 28 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 28 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 27 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 27 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 26 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 26 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 25 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 25 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 24 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 24 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 23 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 23 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 22 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 22 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 21 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 21 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 20 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 20 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 19 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 19 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 18 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 18 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 17 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 17 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 16 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 16 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 15 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 15 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 14 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 14 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 13 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 12 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 12 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 11 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 11 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 10 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 10 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 9 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 9 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 8 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 7 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 6 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 4 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 3 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 2 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 95.9ms | GC: 22.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 97.2ms | GC: 22.5ms)
+Completed 200 OK in 145ms (Views: 94.8ms | ActiveRecord: 3.4ms (131 queries, 0 cached) | GC: 22.5ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-29 17:11:19 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:17
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 65 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 65 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 64 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 64 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 63 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 63 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 62 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 62 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 61 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 61 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 60 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 60 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 59 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 59 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 58 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 58 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 57 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 57 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 56 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 56 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 55 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 55 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 54 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 54 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 53 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 53 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 52 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 52 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 51 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 51 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 50 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 50 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 49 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 49 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 48 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 48 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 47 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 47 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 46 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 46 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 45 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 45 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 44 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 44 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 43 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 43 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 42 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 42 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 41 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 41 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 40 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 40 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 39 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 39 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 38 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 38 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 37 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 37 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 36 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 36 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 35 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 35 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 34 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 34 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 33 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 33 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 32 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 32 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 31 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 31 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 30 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 30 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 29 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 29 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 28 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 28 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 27 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 27 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 26 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 26 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 25 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 25 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 24 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 24 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 23 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 23 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 22 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 22 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 21 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 21 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 20 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 20 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 19 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 19 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 18 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 18 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 17 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 17 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 16 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 16 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 15 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 15 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 14 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 14 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 13 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 12 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 12 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 11 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 11 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 10 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 10 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 9 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 9 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 8 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 7 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 6 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 4 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 3 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 2 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 58.9ms | GC: 4.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 59.4ms | GC: 4.4ms)
+Completed 200 OK in 113ms (Views: 56.0ms | ActiveRecord: 3.5ms (131 queries, 0 cached) | GC: 4.4ms)
+
+
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-07-29 17:11:19 +0700
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-07-29 17:11:19 +0700
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-07-29 17:11:19 +0700
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-07-29 17:11:19 +0700
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-07-29 17:11:19 +0700
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-07-29 17:11:19 +0700
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-07-29 17:11:19 +0700
+Started GET "/bulkcharges/65/csv_preview" for 127.0.0.1 at 2025-07-29 17:11:20 +0700
+Processing by BulkchargesController#csv_preview as HTML
+  Parameters: {"id"=>"65"}
+  [1m[36mBulkCharge Load (0.1ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 65 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:37:in `csv_preview'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 65 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:39:in `csv_preview'
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 65 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:40:in `csv_preview'
+[36m  Disk Storage (0.3ms) [0m[34mDownloaded file from key: 9d56ho1uutoyijr2jdif2dxsw883[0m
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/csv_preview.html.erb within layouts/application
+  Rendered bulkcharges/csv_preview.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 57ms (Views: 0.9ms | ActiveRecord: 0.2ms (3 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-29 17:11:21 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:17
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 65 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 65 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 64 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 64 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 63 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 63 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 62 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 62 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 61 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 61 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 60 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 60 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 59 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 59 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 58 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 58 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 57 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 57 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 56 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 56 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 55 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 55 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 54 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 54 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 53 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 53 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 52 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 52 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 51 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 51 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 50 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 50 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 49 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 49 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 48 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 48 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 47 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 47 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 46 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 46 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 45 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 45 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 44 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 44 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 43 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 43 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 42 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 42 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 41 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 41 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 40 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 40 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 39 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 39 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 38 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 38 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 37 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 37 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 36 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 36 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 35 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 35 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 34 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 34 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 33 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 33 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 32 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 32 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 31 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 31 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 30 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 30 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 29 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 29 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 28 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 28 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 27 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 27 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 26 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 26 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 25 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 25 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 24 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 24 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 23 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 23 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 22 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 22 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 21 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 21 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 20 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 20 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 19 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 19 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 18 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 18 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 17 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 17 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 16 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 16 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 15 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 15 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 14 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 14 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 13 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 12 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 12 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 11 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 11 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 10 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 10 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 9 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 9 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 8 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 7 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 6 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 4 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 3 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 2 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 70.5ms | GC: 5.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 71.0ms | GC: 5.4ms)
+Completed 200 OK in 121ms (Views: 67.4ms | ActiveRecord: 3.8ms (131 queries, 0 cached) | GC: 5.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI5ZDU2aG8xdXV0b3lpanIyamRpZjJkeHN3ODgzIiwiZGlzcG9zaXRpb24iOiJhdHRhY2htZW50OyBmaWxlbmFtZT1cImJ1bGstZXhlcmNpc2UgLSBTaGVldDEgLSBidWxrLWV4ZXJjaXNlIC0gU2hlZXQxLmNzdi5jc3ZcIjsgZmlsZW5hbWUqPVVURi04JydidWxrLWV4ZXJjaXNlJTIwLSUyMFNoZWV0MSUyMC0lMjBidWxrLWV4ZXJjaXNlJTIwLSUyMFNoZWV0MS5jc3YuY3N2IiwiY29udGVudF90eXBlIjoidGV4dC9jc3YiLCJzZXJ2aWNlX25hbWUiOiJsb2NhbCJ9LCJleHAiOiIyMDI1LTA3LTI5VDEwOjE1OjMzLjU2M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--7cc7859fc00ed0e5f2547ca3c50c62b3f0a429d4/bulk-exercise%20-%20Sheet1%20-%20bulk-exercise%20-%20Sheet1.csv.csv" for 127.0.0.1 at 2025-07-29 17:11:22 +0700
+Processing by ActiveStorage::DiskController#show as CSV
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"bulk-exercise - Sheet1 - bulk-exercise - Sheet1.csv"}
+Completed 304 Not Modified in 51ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges/65/csv_preview" for 127.0.0.1 at 2025-07-29 17:11:26 +0700
+Processing by BulkchargesController#csv_preview as HTML
+  Parameters: {"id"=>"65"}
+  [1m[36mBulkCharge Load (0.4ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" WHERE "bulk_charges"."id" = 65 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:37:in `csv_preview'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 65 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:39:in `csv_preview'
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 65 LIMIT 1 /*action='csv_preview',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/controllers/bulkcharges_controller.rb:40:in `csv_preview'
+[36m  Disk Storage (0.6ms) [0m[34mDownloaded file from key: 9d56ho1uutoyijr2jdif2dxsw883[0m
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/csv_preview.html.erb within layouts/application
+  Rendered bulkcharges/csv_preview.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 59ms (Views: 3.9ms | ActiveRecord: 1.0ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/bulkcharges" for 127.0.0.1 at 2025-07-29 17:11:28 +0700
+Processing by BulkchargesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bulkcharges/index.html.erb within layouts/application
+  [1m[36mBulkCharge Load (0.2ms)[0m  [1m[34mSELECT "bulk_charges".* FROM "bulk_charges" ORDER BY "bulk_charges"."created_at" DESC /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:17
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 65 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 65 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 64 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 64 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 63 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 63 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 62 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 62 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 61 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 61 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 60 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 60 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 59 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 59 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 58 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 58 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 57 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 57 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 56 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 56 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 55 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 55 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 54 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 54 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 53 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 53 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 52 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 52 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 51 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 51 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 50 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 50 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 49 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 49 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 48 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 48 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 47 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 47 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 46 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 46 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 45 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 45 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 44 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 44 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 43 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 43 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 42 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 42 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 41 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 41 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 40 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 40 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 39 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 39 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 38 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 38 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 37 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 37 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 36 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 36 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 35 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 35 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 34 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 34 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 33 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 33 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 32 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 32 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 31 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 31 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 30 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 30 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 29 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 29 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 28 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 28 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 27 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 27 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 26 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 26 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 25 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 25 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 24 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 24 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 23 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 23 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 22 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 22 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 21 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 21 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 20 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 20 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 19 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 19 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 18 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 18 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 17 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 17 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 16 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 16 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 15 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 15 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 14 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 14 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 13 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 13 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 12 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 12 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 11 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 11 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 10 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 10 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 9 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 9 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 8 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 8 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 7 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 7 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 6 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 6 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 5 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 5 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 4 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 4 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 3 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 3 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 2 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 2 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = 1 AND "active_storage_attachments"."record_type" = 'BulkCharge' AND "active_storage_attachments"."name" = 'csv_file' LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  [1m[36mActiveStorage::Blob Load (0.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = 1 LIMIT 1 /*action='index',application='BulkExercise',controller='bulkcharges'*/[0m
+  ↳ app/views/bulkcharges/index.html.erb:26
+  Rendered bulkcharges/index.html.erb within layouts/application (Duration: 75.9ms | GC: 14.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 76.4ms | GC: 14.3ms)
+Completed 200 OK in 124ms (Views: 73.6ms | ActiveRecord: 3.0ms (131 queries, 0 cached) | GC: 14.3ms)
+
+

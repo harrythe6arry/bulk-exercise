@@ -64,12 +64,10 @@ class ChargeCsvJob
     # p "Vault API response body: #{response.body.inspect}"
     # p "Vault API response headers: #{response.headers.inspect}"
 
-
     rescue => e
     p "Exception during Vault API call: #{e.class} - #{e.message}"
     p e.backtrace
     return
-
 
     end
     p "the req.body is #{response.body}"

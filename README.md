@@ -1,24 +1,30 @@
-# README
+# Bulk Exercise Create Charge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This exercise aims to develop the fundamentals on how to create bulk charge using Omise api and uploading the csv file with the credentials like primary, secret keys, and other card information in order to create charge. 
 
-Things you may want to cover:
+This project utlizes active storage for storing csv files and follow the story as follows: 
 
-* Ruby version
 
-* System dependencies
+- There is JUST 1 USER, so no need maintain distinction between user data for now. (don’t need to create users table)
+- As the user of the application, we should be able to bulk create card charges based on the input CSV. 
+- As a app user, I can download previous CSV uploaded.
 
-* Configuration
+- As the user of application, we should be able to see previous transaction attempts for each CSV row, and API response returned for each of them (both token and charge endpoints)
 
-* Database creation
+- Processing of the CSV should be using background job.
 
-* Database initialization
+- We should be able to see status of each CSV file uploaded
 
-* How to run the test suite
+- pending - CSV is yet to be picked up for processing
 
-* Services (job queues, cache servers, search engines, etc.)
+- in_process - CSV is currently processing
 
-* Deployment instructions
+- finished - CSV successfully processed all rows. (all token and charge requests were successfull)
 
-* ...
+- finished_with_errors - CSV processed but some rows had API errors
+
+- We should be able to configure the endpoint for making the request (vault and core) using ENV variable.
+
+- Minimal usable UI should be enough.
+
+- Write unit test for all models/controllers/background jobs/service classes.

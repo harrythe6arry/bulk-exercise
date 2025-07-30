@@ -12,7 +12,7 @@ class ChargeCsvJob
     return unless bulk_charge
     bulk_charge.update!(status: :in_progress)
     csv_text = bulk_charge.csv_file.download
-    p "CSV file downloaded for BulkCharge ID: #{bulk_charge_id}, content length: #{csv_text.length} characters"
+    # p "CSV file downloaded for BulkCharge ID: #{bulk_charge_id}, content length: #{csv_text.length} characters"
     CSV.parse(csv_text, headers: true).each.with_index(1) do |row, index|
       process_row(bulk_charge, row, index)
     end
@@ -24,7 +24,7 @@ class ChargeCsvJob
   private
   
   def process_row(bulk_charge, row_data, row_number)
-    p "Processing row #{row_number} for BulkCharge ID: #{bulk_charge.id}"
+    # p "Processing row #{row_number} for BulkCharge ID: #{bulk_charge.id}"
     # pkey = Rails.application.credentials.omise[:public_key]
     card_pkey = row_data["pkey"] || Rails.application.credentials.omise[:public_key]
     card_skey = row_data['skey'] || Rails.application.credentials.omise[:secret_key]
@@ -40,12 +40,15 @@ class ChargeCsvJob
     p "Row #{row_number} data: #{row_data.inspect}"
     # p "the card charge amount is #{card_charge_amount}"
     # p "the card charge currency is #{card_charge_currency}"
-    p "the public key is #{card_pkey}"
-    p "the secret key is #{card_skey}"
-
+    # p "the public key is #{card_pkey}"
+    # p "the secret key is #{card_skey}"
+    vault_url = ENV.fetch("OMISE_VAULT_URL")
+    api_url   = ENV.fetch("OMISE_API_URL")
+    p "Vault URL: #{vault_url}"
+    p "API URL: #{api_url}"
 
     begin
-    conn = Faraday.new(url: 'https://vault.staging-omise.co')
+    conn = Faraday.new(url: vault_url)
     response = conn.post('/tokens') do |req|
       req.headers['Content-Type'] = 'application/x-www-form-urlencoded'
       req.headers['Authorization'] = "Basic #{Base64.strict_encode64("#{card_pkey}:")}"
@@ -79,9 +82,9 @@ class ChargeCsvJob
     begin
     Omise.api_key = card_skey
     Omise.api_version = "2019-05-29"
-    p "Omise SECRET API key set to: #{Omise.api_key}"
+    # p "Omise SECRET API key set to: #{Omise.api_key}"
 
-    conn = Faraday.new(url: 'https://api.staging-omise.co')
+    conn = Faraday.new(url: api_url)
     response = conn.post('/charges') do |req|
     req.headers['Content-Type'] = 'application/x-www-form-urlencoded'
     req.headers['Authorization'] = "Basic #{Base64.strict_encode64("#{Omise.api_key}:")}"
@@ -92,7 +95,7 @@ class ChargeCsvJob
       "return_uri" => "http://www.example.com/orders/#{bulk_charge.id}/complete",
       "card" => source_token
     )
-      p "Request body: #{req.body}"      
+      # p "Request body: #{req.body}"      
     end
   end
     rescue => e

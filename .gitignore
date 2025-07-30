@@ -1,2 +1,4 @@
 /config/master.key
 /tmp/*
+.env
+.DS_Store

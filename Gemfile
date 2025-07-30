@@ -82,3 +82,5 @@ gem "faraday", "~> 2.13"
 gem 'json', '~> 2.8'
 
 gem "minitest"
+
+gem 'dotenv-rails'

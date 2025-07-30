@@ -63,7 +63,6 @@ class ChargeCsvJob
     # p "Vault API response status: #{response.status}"
     # p "Vault API response body: #{response.body.inspect}"
     # p "Vault API response headers: #{response.headers.inspect}"
-
     rescue => e
     p "Exception during Vault API call: #{e.class} - #{e.message}"
     p e.backtrace
@@ -93,7 +92,7 @@ class ChargeCsvJob
       "return_uri" => "http://www.example.com/orders/#{bulk_charge.id}/complete",
       "card" => source_token
     )
-      p "Request body: #{req.body}"
+      p "Request body: #{req.body}"      
     end
   end
     rescue => e

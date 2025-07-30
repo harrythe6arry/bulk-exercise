@@ -1,5 +1,14 @@
 <h1>CSV Preview for Bulk Charge #<%= @bulk_charge.id %></h1>
 
+<% if @bulk_charge.csv_file.attached? %>
+  <p>
+    Attached file:
+    <%= link_to @bulk_charge.csv_file.filename, rails_blob_path(@bulk_charge.csv_file, disposition: "attachment") %>
+  </p>
+<% else %>
+  <p>No CSV file attached.</p>
+<% end %>
+
 <% if @csv_rows.any? %>
   <table border="1">
     <thead>
